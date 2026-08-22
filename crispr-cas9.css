@@ -5,16 +5,31 @@
     font-size: 62.5%;
 }
 
-section{
-    height: 100vh;
+#linkSelecionado{
+    width: 18rem;
+    height: 6rem;
+    border-radius: 2rem;
+    background-color: rgba(3, 3, 3, 0.493);
+    position: relative;
+    top: 1.2rem;
     
+}
+#linkSelecionado a{
+    position: relative;
+   top: 1.8rem;
 }
 
-#explicacao{
+#crispBG, img{
+    min-width: 100vw;
+}
+
+#crispBG{
+    height: 100vh;
+}main{
     height: 300vh;
     background-color: #B0D7D7;
-    
 }
+
 
 #timino{
     height: 28rem;
@@ -23,7 +38,7 @@ section{
     display: flex;
     justify-content: center;
     position: relative;
-    top: 78rem;
+    top: 58rem;
     left: 18rem;
 }
 
@@ -32,7 +47,7 @@ section{
     flex-direction: row;
     justify-content: center;
     position: relative;
-    top: 55rem;
+    top: 35rem;
 
         #balao {
         clip-path: url(#balaoTextoCrisp);
@@ -83,22 +98,98 @@ section{
         }
 }
 
-
-
-#linkSelecionado{
-    width: 18rem;
-    height: 6rem;
-    border-radius: 2rem;
-    background-color: rgba(3, 3, 3, 0.493);
+#principais-etapas{
+    display: flex;
+    justify-content: space-between;
     position: relative;
-    top: 1.2rem;
+    top: 37rem;
+    flex-direction: row;
+        #balao-p-etapas{
+            width: 70rem;
+            height: 13rem;
+            background-color: #011C36;
+            border-radius: 2.5rem 0 0 2.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+                p{
+                    color: #FBF8F4;
+                    font-size: 4rem;
+                    font-family: "Inter", sans-serif;
+                    font-weight: 600;
+                    text-align: center;
+                    z-index: 90;
+                    box-sizing: border-box;
+                }
+        }  
+
+        #balao-localizacao{
+            clip-path: url(#balao-loc); 
+            background-color: #011C36;
+            width: 34.3rem;
+            height: 23.2rem;
+            position: relative;
+            left: 18.5rem;
+            display: flex;
+            justify-content: center;
+            padding: 1.0rem;
+                p{
+                    color: #FBF8F4;
+                    font-family: "Inter", sans-serif;
+                    font-size: 3.0rem;
+                    font-weight: 600;
+                    
+                }
+        } 
+        
+        #img-loc{
+            min-width: 38.3rem;
+            height: 36.7rem;
+            position: relative;
+            top: 6.2rem;
+            left: -38rem;
+        }    
+
+        #texto-loc{
+            background-color: #DAEEFF;
+            clip-path: url(#balao-texto-loc);
+            width: 68.2rem;
+            height: 25.6rem;
+            position: absolute;
+            top: 45rem;
+            left: 21rem;
+            display: flex;
+            justify-content: center;
+            padding: 3.2rem;
+                p{
+                    width: 59rem;
+                    height: 9.16rem;
+                    color: #000;
+                    font-family: Inter;
+                    font-size: 25px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    
+                }
+        }
+
+        #timino2{
+            height: 28rem;
+            min-width: 30rem;
+            position: absolute;
+            top: 65rem;
+            left: 19rem;
+        }
     
-}
-#linkSelecionado a{
-    position: relative;
-   top: 1.8rem;
-}
 
-#crispBG, img{
-    min-width: 100vw;
 }
+        
+
+
+
+
+
+
+
+
