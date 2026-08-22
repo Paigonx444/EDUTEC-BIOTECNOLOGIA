@@ -6,6 +6,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="crispr-cas9.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     
@@ -35,28 +38,42 @@
     <section id="explicacao">
         
         <img id="timino" src="./Assets/Timino.png" alt="">
-        <div id="paiBalao">
+        
+        <div id="container-baloes">
             <div id="balao">
-                <svg width="0" height="0" style="position:absolute;">
-                <defs>
-                <clipPath id="balaoTextoCrisp" clipPathUnits="objectBoundingBox">
-                <path xmlns="http://www.w3.org/2000/svg" d="M0,0 H0.961 C0.983,0 1,0.066 1,0.148 V0.852 C1,0.934 0.983,1 0.961,1 H0.126 C0.105,1 0.088,0.934 0.088,0.852 V0.248 C0.088,0.189 0.079,0.137 0.065,0.113 L0,0 Z"/>
-                </clipPath>
-                </defs>
-                </svg>
+                <div id="svg-balao">
+                     <svg width="0" height="0" style="position:absolute;">
+                    <defs>
+                    <clipPath id="balaoTextoCrisp" clipPathUnits="objectBoundingBox">
+                    <path xmlns="http://www.w3.org/2000/svg" d="M0,0 H0.961 C0.983,0 1,0.066 1,0.148 V0.852 C1,0.934 0.983,1 0.961,1 H0.126 C0.105,1 0.088,0.934 0.088,0.852 V0.248 C0.088,0.189 0.079,0.137 0.065,0.113 L0,0 Z"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
                 </div>
-        </div>
-        <div id="paibalaozinho">
-            <p></p>
+
+                <div class="texto-balao">
+                <p>O CRISPR-Cas9 é uma tecnologia revolucionária que funciona como uma espécie de "tesoura molecular" de alta precisão. Inspirado em um mecanismo de defesa natural que as bactérias usam contra vírus, esse sistema permite que cientistas editem o DNA de qualquer organismo vivo com uma exatidão sem precedentes. <br>
+                Com ele, é possível localizar um gene específico que está causando uma falha ou doença, recortá-lo e até mesmo substituí-lo por uma sequência saudável, reescrevendo o código da vida de forma simples e rápida.</p>
+                </div>
+            </div>
+        
             <div id="balaozinho">
-                <svg width="0" height="0" style="position:absolute;">
+                <div id="svg-balaozinho">
+                    <svg width="0" height="0" style="position:absolute;">
                     <defs>
                     <clipPath id="custom-clip" clipPathUnits="objectBoundingBox">
                     <path xmlns="http://www.w3.org/2000/svg" d="M1,0.015 C1,0.007 0.996,0 0.991,0 H0.034 C0.015,0 0,0.024 0,0.054 V0.187 C0,0.217 0.015,0.241 0.034,0.241 H0.853 C0.903,0.241 0.942,0.305 0.942,0.383 V1 L1,0.015 Z"/>
                     </clipPath>
                     </defs>
                     </svg>
+                </div>
+
+                <div class="texto-balaozinho">
+                    <p>O que é o CRISPR-Cas9?</p>
+                </div>
             </div>
+
+            
         </div>
     
     </section>

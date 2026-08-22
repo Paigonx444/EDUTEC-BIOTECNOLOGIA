@@ -1,11 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
 section{
     height: 100vh;
+    
 }
 
 #explicacao{
     height: 300vh;
     background-color: #B0D7D7;
+    
 }
+
 #timino{
     height: 28rem;
     min-width: 30rem;
@@ -17,35 +27,63 @@ section{
     left: 18rem;
 }
 
-#balao {
-    
-    clip-path: url(#balaoTextoCrisp);
-    background-color: #DAEEFF; /* Cor de fundo para teste */
-    width: 108rem;              /* Largura do balão */
-    height: 28.5rem;             /* Altura do balão */
-    padding: 2rem;
-}
-#paiBalao{
+#container-baloes{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     position: relative;
     top: 55rem;
 
-}
-#paibalaozinho{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 16rem;
-    left: 30rem;
+        #balao {
+        clip-path: url(#balaoTextoCrisp);
+        background-color: #DAEEFF; /* Cor de fundo para teste */
+        width: 108rem;              /* Largura do balão */
+        height: 28.5rem;             /* Altura do balão */
+        padding: 2rem;
+        position: absolute; 
+      
+        }
+
+        #balaozinho{
+            clip-path: url(#custom-clip);
+            background-color: #011C36;
+            position: relative;
+            top: -10rem;
+            left: 29.5rem;
+            width: 58.3rem;
+            height: 36.8rem;
+            padding: 2rem;
+        }
+
+        .texto-balaozinho {
+            color: #FBF8F4;
+            font-size: 6rem;
+            font-family: "Inter", sans-serif;
+            font-weight: 600;
+            text-align: center;
+            z-index: 90;
+            box-sizing: border-box;
+        }
+
+        .texto-balao{
+            color: #000;
+            max-width: 90rem;
+            min-height: 25rem;
+            line-height: 2.5rem;
+            font-size: 4rem;
+            font-family: "Inter", sans-serif;
+            font-weight: 600;
+            justify-content: center;
+            align-items: start;
+            z-index: 90;
+            box-sizing: border-box;
+            position: relative;
+            left: 12.5rem;
+            top: 1.5rem;
+        }
 }
 
-#balaozinho{
-    clip-path: url(#custom-clip);
-    background-color: #011C36;
-    width: 58.3rem;
-    height: 36.8rem;
-}
+
 
 #linkSelecionado{
     width: 18rem;
