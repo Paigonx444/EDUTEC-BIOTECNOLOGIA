@@ -1,46 +1,71 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-size: 62.5%;
 }
 
-#bg-secondary{
+#bg-secondary {
     background-color: #74b9c3cb;
-    min-height: 280rem;
+    min-height: 274rem;
     width: 172rem;
     position: absolute;
-    bottom: -325rem;
+    bottom: -320rem;
     left: 10rem;
     border-radius: 10rem;
+    z-index: 0;
+    display: flex;
+    align-items: end;
+    justify-content: right;
 }
 
-#linkSelecionado{
+#linkSelecionado {
     width: 18rem;
     height: 6rem;
     border-radius: 2rem;
     background-color: rgba(3, 3, 3, 0.493);
     position: relative;
     top: 1.2rem;
-    
-}
-#linkSelecionado a{
-    position: relative;
-   top: 1.8rem;
+
 }
 
-#crispBG, img{
+#linkSelecionado a {
+    position: relative;
+    top: 1.8rem;
+}
+
+#crispBG,
+img {
     min-width: 100vw;
 }
-#crispBG{
+
+#crispBG {
     height: 100vh;
-}main{
-    height: 400vh;
+}
+
+#bg-container {
+    position: relative;
+
+    #titulo {
+        color: #c7eef0;
+        font-family: Inter;
+        font-size: 20rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        position: absolute;
+        top: 20rem;
+        left: 130rem;
+    }
+}
+
+main {
+    height: 330vh;
     background-color: #B0D7D7;
 }
 
 
-#timino{
+#timino {
     height: 28rem;
     min-width: 30rem;
     transform: scaleX(-1);
@@ -51,226 +76,364 @@
     left: 18rem;
 }
 
-#container-baloes{
+#container-baloes {
     display: flex;
     flex-direction: row;
     justify-content: center;
     position: relative;
     top: 35rem;
+    
 
-        #balao {
+    #balao {
         clip-path: url(#balaoTextoCrisp);
-        background-color: #DAEEFF; /* Cor de fundo para teste */
-        width: 108rem;              /* Largura do balão */
-        height: 28.5rem;             /* Altura do balão */
+        background-color: #DAEEFF;
+        /* Cor de fundo para teste */
+        width: 108rem;
+        /* Largura do balão */
+        height: 28.5rem;
+        /* Altura do balão */
         padding: 2rem;
-        position: absolute; 
-      
-        }
+        position: absolute;
 
-        #balaozinho{
-            clip-path: url(#custom-clip);
-            background-color: #011C36;
-            position: relative;
-            top: -10rem;
-            left: 29.5rem;
-            width: 58.3rem;
-            height: 36.8rem;
-            padding: 2rem;
-        }
+    }
 
-        .texto-balaozinho {
+    #balaozinho {
+        clip-path: url(#custom-clip);
+        background-color: #011C36;
+        position: relative;
+        top: -10rem;
+        left: 29.5rem;
+        width: 58.3rem;
+        height: 36.8rem;
+        padding: 2rem;
+    }
+
+    .texto-balaozinho {
+        color: #FBF8F4;
+        font-size: 6rem;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+        text-align: center;
+        z-index: 90;
+        box-sizing: border-box;
+    }
+
+    .texto-balao {
+        color: #000;
+        max-width: 90rem;
+        min-height: 25rem;
+        line-height: 2.7rem;
+        font-size: 4rem;
+        font-family: "Inter", sans-serif;
+        font-weight: 550;
+        justify-content: center;
+        align-items: start;
+        z-index: 90;
+        box-sizing: border-box;
+        position: relative;
+        left: 12.5rem;
+        top: 1.3rem;
+    }
+}
+
+#principais-etapas {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 37rem;
+    right: 2rem;
+    flex-direction: row;
+
+    #balao-p-etapas {
+        width: 50rem;
+        position: relative;
+        right: 8rem;
+        height: 13rem;
+        background-color: #011C36;
+        border-radius: 2.5rem 0 0 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p {
             color: #FBF8F4;
-            font-size: 6rem;
+            font-size: 4rem;
             font-family: "Inter", sans-serif;
             font-weight: 600;
             text-align: center;
             z-index: 90;
             box-sizing: border-box;
         }
+    }
 
-        .texto-balao{
-            color: #000;
-            max-width: 90rem;
-            min-height: 25rem;
-            line-height: 2.7rem;
-            font-size: 4rem;
+    #balao-localizacao {
+        clip-path: url(#balao-loc);
+        background-color: #011C36;
+        width: 34.3rem;
+        height: 23.2rem;
+        position: relative;
+        left: 18.5rem;
+        display: flex;
+        justify-content: center;
+        padding: 1.0rem;
+
+        p {
+            color: #FBF8F4;
             font-family: "Inter", sans-serif;
-            font-weight: 550;
-            justify-content: center;
-            align-items: start;
-            z-index: 90;
-            box-sizing: border-box;
-            position: relative;
-            left: 12.5rem;
-            top: 1.3rem;
+            font-size: 3.0rem;
+            font-weight: 600;
+
         }
+    }
+
+    #img-loc {
+        min-width: 38.3rem;
+        height: 36.7rem;
+        position: relative;
+        top: 6.2rem;
+        left: -48rem;
+    }
+
+    #texto-loc {
+        background-color: #DAEEFF;
+        clip-path: url(#balao-texto-loc);
+        width: 68.2rem;
+        height: 25.6rem;
+        position: absolute;
+        top: 45rem;
+        left: 21rem;
+        display: flex;
+        justify-content: center;
+        padding: 3.2rem;
+
+        p {
+            width: 59rem;
+            height: 9.16rem;
+            color: #000;
+            font-family: Inter;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+
+        }
+    }
+
+    #timino2 {
+        height: 28rem;
+        min-width: 30rem;
+        position: absolute;
+        top: 65rem;
+        left: 19rem;
+    }
+
 }
 
-#principais-etapas{
+#etapas-corte {
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+
+    #balao-o-corte {
+        clip-path: url(#balao-corte);
+        background-color: #011C36;
+        width: 34.3rem;
+        height: 23.2rem;
+        transform: scaleX(-1);
+        position: relative;
+        right: -99rem;
+        top: 61rem;
+        display: flex;
+        justify-content: center;
+        padding: 1.0rem;
+
+        p {
+            color: #FBF8F4;
+            font-family: "Inter", sans-serif;
+            font-size: 3.0rem;
+            font-weight: 600;
+            transform: scaleX(-1);
+
+        }
+    }
+
+    #img-corte {
+        min-width: 48.4rem;
+        height: 28.9;
+        position: relative;
+        right: -48rem;
+        bottom: -67.3rem;
+    }
+
+    #texto-corte {
+        background-color: #DAEEFF;
+        clip-path: url(#balao-texto-corte);
+        width: 68.2rem;
+        height: 25.6rem;
+        position: relative;
+        top: 98rem;
+        right: 20.1rem;
+        display: flex;
+        justify-content: center;
+        padding: 3.2rem;
+        transform: scaleX(-1);
+
+        p {
+            width: 59rem;
+            height: 9.16rem;
+            color: #000;
+            font-family: Inter;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            transform: scaleX(-1);
+
+        }
+    }
+
+    #timino3 {
+        height: 28rem;
+        min-width: 30rem;
+        transform: scaleX(-1);
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 118rem;
+        left: 133rem;
+    }
+}
+
+#etapas-reparacao {
     display: flex;
     justify-content: space-between;
     position: relative;
     top: 37rem;
     flex-direction: row;
-        #balao-p-etapas{
-            width: 50rem;
-            position: relative;
-            right: 10rem;
-            height: 13rem;
-            background-color: #011C36;
-            border-radius: 2.5rem 0 0 2.5rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-                p{
-                    color: #FBF8F4;
-                    font-size: 4rem;
-                    font-family: "Inter", sans-serif;
-                    font-weight: 600;
-                    text-align: center;
-                    z-index: 90;
-                    box-sizing: border-box;
-                }
-        }  
+    z-index: 10;
 
-        #balao-localizacao{
-            clip-path: url(#balao-loc); 
-            background-color: #011C36;
-            width: 34.3rem;
-            height: 23.2rem;
-            position: relative;
-            left: 18.5rem;
-            display: flex;
-            justify-content: center;
-            padding: 1.0rem;
-                p{
-                    color: #FBF8F4;
-                    font-family: "Inter", sans-serif;
-                    font-size: 3.0rem;
-                    font-weight: 600;
-                    
-                }
-        } 
-        
-        #img-loc{
-            min-width: 38.3rem;
-            height: 36.7rem;
-            position: relative;
-            top: 6.2rem;
-            left: -48rem;
-        }    
+    #balao-reparacao {
+        clip-path: url(#balao-rep);
+        background-color: #011C36;
+        width: 34.3rem;
+        height: 23.2rem;
+        position: relative;
+        top: 51rem;
+        left: 18.5rem;
+        display: flex;
+        justify-content: center;
+        padding: 1.0rem;
 
-        #texto-loc{
-            background-color: #DAEEFF;
-            clip-path: url(#balao-texto-loc);
-            width: 68.2rem;
-            height: 25.6rem;
-            position: absolute;
-            top: 45rem;
-            left: 21rem;
-            display: flex;
-            justify-content: center;
-            padding: 3.2rem;
-                p{
-                    width: 59rem;
-                    height: 9.16rem;
-                    color: #000;
-                    font-family: Inter;
-                    font-size: 25px;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: normal;
-                    
-                }
+        p {
+            color: #FBF8F4;
+            font-family: "Inter", sans-serif;
+            font-size: 3.0rem;
+            font-weight: 600;
+
         }
+    }
 
-        #timino2{
-            height: 28rem;
-            min-width: 30rem;
-            position: absolute;
-            top: 65rem;
-            left: 19rem;
+    #img-rep {
+        min-width: 38.3rem;
+        height: 36.7rem;
+        position: relative;
+        top: 57.2rem;
+        left: -116.4rem;
+    }
+
+    #texto-rep {
+        background-color: #DAEEFF;
+        clip-path: url(#balao-texto-rep);
+        width: 68.2rem;
+        height: 25.6rem;
+        position: absolute;
+        top: 96rem;
+        left: 21rem;
+        display: flex;
+        justify-content: center;
+        padding: 3.2rem;
+
+        p {
+            width: 59rem;
+            height: 9.16rem;
+            color: #000;
+            font-family: Inter;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+
         }
+    }
+
+    #timino3 {
+        height: 28rem;
+        min-width: 30rem;
+        position: absolute;
+        top: 116rem;
+        left: 19rem;
+    }
 
 }
 
-#etapas-corte{
+footer{
+    position: absolute;
+    bottom: -368rem;
+    z-index: 0;
+    #div-footer{
+    background-color: #0A2E40;
+    height: 40rem;
+    min-width: 100vw;
     display: flex;
-    justify-content: right;  
-    flex-direction: row;
-    #balao-o-corte{
-            clip-path: url(#balao-corte); 
-            background-color: #011C36;
-            width: 34.3rem;
-            height: 23.2rem;
-            transform: scaleX(-1);
-            position: relative;
-            right: -99rem;  
-            top: 61rem;
-            display: flex;
-            justify-content: center;
-            padding: 1.0rem;
-                p{
-                    color: #FBF8F4;
-                    font-family: "Inter", sans-serif;
-                    font-size: 3.0rem;
-                    font-weight: 600;
-                    transform: scaleX(-1);
-                    
-                }
-    }
-
-    #img-corte{
-      min-width: 48.4rem;
-      height: 28.9; 
-      position: relative;
-      right: -48rem;
-      bottom: -67.3rem;
-    }
-
-    #texto-corte{
-            background-color: #DAEEFF;
-            clip-path: url(#balao-texto-corte);
-            width: 68.2rem;
-            height: 25.6rem;
-            position: relative;
-            top: 98rem;  
-            right: 20.1rem;  
-            display: flex;
-            justify-content: center;
-            padding: 3.2rem;
-            transform: scaleX(-1);
-                p{
-                    width: 59rem;
-                    height: 9.16rem;
-                    color: #000;
-                    font-family: Inter;
-                    font-size: 25px;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: normal;
-                    transform: scaleX(-1);
-                    
-                }
-    }
-
-    #timino3{
-    height: 28rem;
-    min-width: 30rem;
-    transform: scaleX(-1);
-    display: flex;
+    align-items: center;
     justify-content: center;
-    position: relative;
-    top: 118rem;
-    left: 133rem;
+    gap: 2rem;
+    flex-direction: column;
+    #img-footer{
+        min-width: 10.3rem;
+        height: 10.3rem;
+        border-radius: 2rem;
+    }
+    #p1-footer{
+        color: #DAEEFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.9px;
+    }  
+    #linha-footer{
+        background-color: #B0D7D7;
+        height: 0.2rem;
+        width: 23rem;
+    }
+    #p2-footer{
+        color: #DAEEFF;
+        font-family: Inter;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -1.2px;
+        strong{
+            color: #B0D7D7;
+            font-family: Inter;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: -1.2px;
+        }
+    }
+    #p3-footer{
+        color: #DAEEFF;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -0.6px;
+    }
 }
-}       
-
-
-
-
-
-
-
-
+}
