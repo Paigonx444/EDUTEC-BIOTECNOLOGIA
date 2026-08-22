@@ -1,0 +1,66 @@
+section{
+    height: 100vh;
+}
+
+#explicacao{
+    height: 300vh;
+    background-color: #B0D7D7;
+}
+#timino{
+    height: 28rem;
+    min-width: 30rem;
+    transform: scaleX(-1);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 78rem;
+    left: 18rem;
+}
+
+#balao {
+    
+    clip-path: url(#balaoTextoCrisp);
+    background-color: #DAEEFF; /* Cor de fundo para teste */
+    width: 108rem;              /* Largura do balão */
+    height: 28.5rem;             /* Altura do balão */
+    padding: 2rem;
+}
+#paiBalao{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 55rem;
+
+}
+#paibalaozinho{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 16rem;
+    left: 30rem;
+}
+
+#balaozinho{
+    clip-path: url(#custom-clip);
+    background-color: #011C36;
+    width: 58.3rem;
+    height: 36.8rem;
+}
+
+#linkSelecionado{
+    width: 18rem;
+    height: 6rem;
+    border-radius: 2rem;
+    background-color: rgba(3, 3, 3, 0.493);
+    position: relative;
+    top: 1.2rem;
+    
+}
+#linkSelecionado a{
+    position: relative;
+   top: 1.8rem;
+}
+
+#crispBG, img{
+    min-width: 100vw;
+}

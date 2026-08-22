@@ -12,14 +12,16 @@
     --background-nav: rgba(7, 7, 7, 0.50);
 }
 nav{
+    z-index: 9999;
     min-width: 100vw; /*largura minima se torna a largura da tela*/
     position: fixed;
     .nav-textos {
         display: flex;
         justify-content: space-between;
         background-color: var(--background-nav);
-        backdrop-filter: blur(0.rem);
-        border-bottom: #9FFFFF 1rem;
+        backdrop-filter: blur(0.5rem);
+        border-bottom: solid #9FFFFF 0.1rem;
+        
         height: 8.7rem;
         font-family: Gabarito;
         font-weight: 400;
@@ -37,4 +39,5 @@ nav{
         height: 3.4rem;
         background-color: var(--texto-nav);
     }
+    
 }
