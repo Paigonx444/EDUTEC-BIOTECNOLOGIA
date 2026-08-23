@@ -1,31 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
     <title>Biotecnologia - Piets</title>
 </head>
+
 <body>
-    <header>
-        <section class="nav">
-            <div class="nav-textos">
-                <a href="index.html">Home</a> <div class="linha-vertical"></div>
-                <a href="crispr-cas9.html">CRISPR-Cas9</a>
-                <a href="aplicações.html">Aplicações</a>
-                <a href="futuro.html">Futuro</a>
-                <a href="mutação_genética.html">Mutação Genética</a>
-                <a href="jogo.html">Jogo</a> <div class="linha-vertical"></div>
-                <a>Login</a>
-                <a href="cadastro.html" id="botao-cadastro">Cadastre-se</a>
+    <header class="nav">
+        <div class="nav-textos">
+            <a href="index.html"><img src="Assets/Logo BIOTEC PIETS.png" alt="Logo da empresa BIOTEC - PIETS"></a>
+            <a href="index.html" id="home-nav" class="link-selecionado">Home</a>
+            <div class="linha-vertical"></div>
+            <a href="crispr-cas9.html">CRISPR-Cas9</a>
+            <a href="aplicações.html">Aplicações</a>
+            <a href="futuro.html">Futuro</a>
+            <a href="mutação_genética.html">Mutação Genética</a>
+            <a href="jogo.html">Jogo</a>
+            <div class="linha-vertical"></div>
+            <a>Login</a>
+            <a href="cadastro.html" id="botao-cadastro">Cadastre-se</a>
+        </div>
+    </header>
+
+    <section>
+        <div>
+            <img src="Assets/Home BG.png" alt="Imagem de fundo Biotecnologia" id="home-bg-img">
+        </div>
+        <div id="titulo-principal-home">
+            <h1 id="biotecnologia-branco">BIOTECNOLOGIA</h1>
+            <h1 id="biotecnologia-azul">BIOTECNOLOGIA</h1>
+            <h1 id="biotecnologia-roxo">BIOTECNOLOGIA</h1>
+        </div>
+        <div id="degrade-para-carrossel"></div>
+    </section>
+
+    <main>
+        <section>
+            <div class="home">
+                <h2>AQUI VOCÊ VAI ENCONTRAR</h2>
+
+                <div class="conteudo-carrossel-encontrara">
+
+                    <button id="seta-esquerda"><img src="Assets/Seta Esquerda.png"
+                            alt="Seta para esquerda, para ler outros cards"></button>
+
+                    <div class="card-encontrara">
+                        <h3 id="card-titulo">O que é?</h3>
+                        <p id="card-p"> Biotecnologia é o uso de seres vivos, células ou moléculas biológicas para criar
+                            produtos, processos ou soluções úteis para a sociedade. Ela não é algo necessariamente
+                            moderno: há milhares de anos, humanos já utilizavam microrganismos para produzir pão,
+                            queijo, vinho e cerveja. Hoje, com o avanço da genética, a biotecnologia ficou muito mais
+                            poderosa, permitindo produzir medicamentos, vacinas, alimentos geneticamente modificados,
+                            enzimas e até organismos modificados geneticamente.</p>
+                    </div>
+
+                    <button id="seta-direita"><img src="Assets/Seta Direita.png"
+                            alt="Seta para direita, para ler outros cards"></button>
+
+                </div>
             </div>
         </section>
-    </header>
-    <main>
+
+        <section class="aquiVcVaiEncontrar">
+
+        </section>
+
+        <section></section>
 
     </main>
 </body>
+
 </html>
