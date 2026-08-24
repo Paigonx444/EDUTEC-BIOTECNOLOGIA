@@ -304,44 +304,37 @@ section {
 }
 
 .cards-trilha {
-    flex-direction: column;
-    position: relative;
-    flex: 0 0 40vw;
-    /* Define que o a imagem vai ocupar 30% da tela */
-    height: 50rem;
-    background-color: var(--Azul-esverdeado-100);
-    border-radius: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow:hidden;
+        flex-direction: column;
+        position: relative;
+        flex: 0 0 40vw;
+        height: 2em;
+        border-radius: 3rem;
+        height: 40rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
 
-    scroll-snap-align: center;
-    /* Alinha o card exatamente no centro da tela */
-    padding: 5rem;
-    width: 10rem;
+        scroll-snap-align: center;
+        /* Alinha o card exatamente no centro da tela */
+        background-color: var(--Azul-esverdeado-100);
+
     h4 {
         font-size: 3rem;
         margin-bottom: 44rem;
-        color: var(--texto-nav);
+        color: var(--Preto);
         position: absolute;
-
+        z-index: 10;
+        margin-bottom: 30rem;
     }
 }
 
 .cards-trilha a img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
     border-radius: 3rem;
 }
-#imagem-aplicacoes {
-    width: 100%;
-    height: 70%;
-    margin-top: 10rem;
-}
 
-.cards-trilha::after{
+.cards-trilha::after {
     content: "";
     position: absolute;
     top: 0;
@@ -353,6 +346,6 @@ section {
     transition: opacity 0.4s ease-in-out;
 }
 
-.cards-trilha:hover::after{
+.cards-trilha:hover::after {
     opacity: 0;
 }
