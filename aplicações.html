@@ -3,27 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aplicações</title>
     <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="aplicações.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Aplicações da Biotecnologia</title>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <div class="nav-textos">
-                <a href="index.html">Home</a> <div class="linha-vertical"></div>
-                <a href="crispr-cas9.html">CRISPR-Cas9</a>
-                <a href="aplicações.html">Aplicações</a>
-                <a href="futuro.html">Futuro</a>
-                <a href="mutação_genética.html">Mutação Genética</a>
-                <a href="jogo.html">Jogo</a> <div class="linha-vertical"></div>
-                <a>Login</a>
-                <a href="cadastro.html" id="botao-cadastro">Cadastre-se</a>
-            </div>
-        </nav>
+    <header class="nav">
+        <div class="nav-textos">
+            <a href="index.html"><img src="Assets/Logo BIOTEC PIETS.png" alt="Logo da empresa BIOTEC - PIETS"></a>
+            <a href="index.html" id="home-nav">Home</a>
+            <div class="linha-vertical"></div>
+            <a href="crispr-cas9.html">CRISPR-Cas9</a>
+            <a href="aplicações.html" class="link-selecionado">Aplicações</a>
+            <a href="futuro.html">Futuro</a>
+            <a href="mutação_genética.html">Mutação Genética</a>
+            <a href="jogo.html">Jogo</a>
+            <div class="linha-vertical"></div>
+            <a href="login.html">Login</a>
+            <a href="cadastro.html" id="botao-cadastro">Cadastre-se</a>
+        </div>
     </header>
 
-    <section id="aplicacoesBG">
-        <img src="./Assets/Aplicações BG.png" alt="Aplicações Biotecnologia">
-    </section>
+    <main>
+        <section class="hero-aplicacoes">
+            <img src="Assets/Aplicações BG.png" alt="Aplicações da biotecnologia" id="aplicacoes-bg">
+            <div class="filtro-hero"></div>
+        </section>
+
+        <div class="faixas-transicao" aria-hidden="true">
+            <div></div><div></div><div></div><div></div><div></div><div></div>
+        </div>
+
+        <section class="classificacoes">
+            <div class="titulo-classificacoes">
+                <h1>Classificações da<br><span>Biotecnologia</span></h1>
+            </div>
+
+            <div class="linha-do-tempo">
+                <div class="linha-vertical-tempo"></div>
+
+                <div class="classificacao saude">
+                    <div class="marcador"></div>
+                    <div class="conteudo-classificacao">
+                        <h2>SAÚDE E MEDICINA</h2>
+                        <p>É a vertente focada no desenvolvimento de tratamentos médicos revolucionários. Ela engloba a criação de vacinas de última geração, novos medicamentos, diagnósticos rápidos de patologias e técnicas avançadas de engenharia genética — como a edição de DNA com o CRISPR — para combater e curar doenças complexas.</p>
+                    </div>
+                </div>
+
+                <div class="classificacao agropecuaria">
+                    <div class="marcador"></div>
+                    <div class="conteudo-classificacao">
+                        <h2>AGROPECUÁRIA</h2>
+                        <p>Voltada diretamente para a agricultura e pecuária sustentáveis. Esta área trabalha no desenvolvimento de plantas mais resistentes a pragas, secas e mudanças climáticas, além de fertilizantes biológicos inovadores. O objetivo é aumentar a produção de alimentos reduzindo drasticamente o impacto ambiental.</p>
+                    </div>
+                </div>
+
+                <div class="classificacao industrial">
+                    <div class="marcador"></div>
+                    <div class="conteudo-classificacao">
+                        <h2>INDUSTRIAL</h2>
+                        <p>Conhecida como a biotecnologia industrial, ela substitui processos químicos tradicionais e poluentes por soluções biológicas. Utiliza enzimas e microrganismos para otimizar a eficiência de fábricas, gerar biocombustíveis e criar novos materiais biodegradáveis, como os bioplásticos.</p>
+                    </div>
+                </div>
+
+                <div class="classificacao marinha">
+                    <div class="marcador"></div>
+                    <div class="conteudo-classificacao">
+                        <h2>MARINHA</h2>
+                        <p>Dedicada ao estudo e aproveitamento dos recursos e organismos marinhos. Através da exploração de algas, bactérias e peixes de águas profundas, cientistas encontram moléculas valiosas para a criação de novos cosméticos, suplementos alimentares, remédios e fontes de energia renovável.</p>
+                    </div>
+                </div>
+
+                <div class="classificacao nutricao">
+                    <div class="marcador"></div>
+                    <div class="conteudo-classificacao">
+                        <h2>NUTRIÇÃO E ALIMENTOS</h2>
+                        <p>Dedicada ao estudo e aproveitamento dos recursos e organismos marinhos. Através da exploração de algas, bactérias e peixes de águas profundas, cientistas encontram moléculas valiosas para a criação de novos cosméticos, suplementos alimentares, remédios e fontes de energia renovável.</p>
+                    </div>
+                </div>
+
+                <div class="classificacao ambiental">
+                    <div class="marcador"></div>
+                    <div class="conteudo-classificacao">
+                        <h2>AMBIENTAL</h2>
+                        <p>Totalmente voltada para a preservação e recuperação do meio ambiente. Esta vertente utiliza a ciência para despoluir solos e águas contaminadas por resíduos industriais (um processo chamado biorremediação), além de gerenciar de forma inteligente a reciclagem e o tratamento de esgoto.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="exemplos"><h2>EXEMPLOS</h2></section>
+
+        <section class="cards-exemplos">
+            <div class="cards-container">
+                <div class="card-exemplo">
+                    <img src="Assets/Img Prótese.png" alt="Raio-X de uma prótese biônica no braço">
+                    <p>A biotecnologia contribui para o desenvolvimento de próteses avançadas e para a criação de tecidos humanos em laboratório. Essas tecnologias unem biologia e engenharia para ajudar pessoas que perderam membros ou sofreram danos em órgãos, abrindo caminho para tratamentos cada vez mais eficientes e personalizados.</p>
+                </div>
+
+                <div class="card-exemplo">
+                    <img src="Assets/Img Bactérias.png" alt="Cultura de bactérias em uma placa de Petri">
+                    <p>Bactérias geneticamente modificadas podem ser utilizadas para produzir medicamentos em larga escala, como a insulina humana usada no tratamento do diabetes. Essa aplicação da biotecnologia torna os tratamentos mais acessíveis, seguros e eficientes.</p>
+                </div>
+
+                <div class="card-exemplo">
+                    <img src="Assets/Img Fungos.png" alt="Estruturas de fungos vistas em detalhe">
+                    <p>A biorremediação utiliza bactérias e fungos para degradar poluentes presentes em rios, solos e oceanos contaminados. Essa técnica ajuda a recuperar ecossistemas afetados por derramamentos de óleo e resíduos químicos de forma sustentável.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img src="Assets/Logo BIOTEC PIETS.png" alt="Biotec.net">
+        <p class="nome-site">BioTec.net</p>
+        <div class="linha-footer"></div>
+        <p class="desenvolvido">DESENVOLVIDO POR PIETS</p>
+        <p class="copyright">All Copyrights reserved - 2026</p>
+    </footer>
 </body>
 </html>
