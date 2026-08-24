@@ -19,7 +19,6 @@
     justify-content: right;
 }
 
-<<<<<<< HEAD
 .link-selecionado {
     background-color: var(--link-selecionado);
     width: 12.5rem;
@@ -29,25 +28,6 @@
 }
 
 #crispBG img {
-=======
-#linkSelecionado {
-    width: 18rem;
-    height: 6rem;
-    border-radius: 2rem;
-    background-color: rgba(3, 3, 3, 0.493);
-    position: relative;
-    top: 1.2rem;
-
-}
-
-#linkSelecionado a {
-    position: relative;
-    top: 1.8rem;
-}
-
-#crispBG,
-img {
->>>>>>> 17fdb522489690439a28ed01096d49ba17aa321e
     min-width: 100vw;
 }
 
@@ -94,11 +74,6 @@ main {
     justify-content: center;
     position: relative;
     top: 35rem;
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> 17fdb522489690439a28ed01096d49ba17aa321e
 
     #balao {
         clip-path: url(#balaoTextoCrisp);
@@ -392,7 +367,6 @@ main {
 
 }
 
-<<<<<<< HEAD
 footer {
     position: absolute;
     bottom: -368rem;
@@ -432,57 +406,12 @@ footer {
 
         #p2-footer {
             color: #DAEEFF;
-=======
-footer{
-    position: absolute;
-    bottom: -368rem;
-    z-index: 0;
-    #div-footer{
-    background-color: #0A2E40;
-    height: 40rem;
-    min-width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    flex-direction: column;
-    #img-footer{
-        min-width: 10.3rem;
-        height: 10.3rem;
-        border-radius: 2rem;
-    }
-    #p1-footer{
-        color: #DAEEFF;
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.9px;
-    }  
-    #linha-footer{
-        background-color: #B0D7D7;
-        height: 0.2rem;
-        width: 23rem;
-    }
-    #p2-footer{
-        color: #DAEEFF;
-        font-family: Inter;
-        font-size: 40px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        letter-spacing: -1.2px;
-        strong{
-            color: #B0D7D7;
->>>>>>> 17fdb522489690439a28ed01096d49ba17aa321e
             font-family: Inter;
             font-size: 40px;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
             letter-spacing: -1.2px;
-<<<<<<< HEAD
 
             strong {
                 color: #B0D7D7;
@@ -505,18 +434,4 @@ footer{
             letter-spacing: -0.6px;
         }
     }
-=======
-        }
-    }
-    #p3-footer{
-        color: #DAEEFF;
-        font-family: Inter;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        letter-spacing: -0.6px;
-    }
-}
->>>>>>> 17fdb522489690439a28ed01096d49ba17aa321e
 }

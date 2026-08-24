@@ -1,14 +1,9 @@
-<<<<<<< HEAD
 * {
-=======
-*{
->>>>>>> 17fdb522489690439a28ed01096d49ba17aa321e
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-size: 62.5%;
 }
-<<<<<<< HEAD
 
 :root {
     --bg-blue: #6696A1;
@@ -361,20 +356,3 @@ section {
 .cards-trilha:hover::after{
     opacity: 0;
 }
-=======
-:root{
-    --bg-blue: #6696A1;
-}
-
-body{
-    height: 100vh;/*altura é a alturA DA tela*/
-    min-width: 100vw;/*largura é a largura da tela*/
-    background-color: var(--bg-blue);
-}
-
-section{
-    min-height: 100vh;/*cada section terá a altura de uma tela pq ai fica responsivo*/
-    width: 80vw; /*largura de 80% da tela pra nao ficar tao no canto as coisas*/
-    
-}
->>>>>>> 17fdb522489690439a28ed01096d49ba17aa321e
