@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #011C36;
+    overflow-x: hidden;
+}
+
+main {
+    width: 100%;
+}
+
+#hero-aplicacoes {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#hero-aplicacoes img {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
