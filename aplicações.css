@@ -266,3 +266,14 @@ footer p {
     font-weight: 500;
     margin: 0;
 }
+
+.item-timeline:last-child::before {
+    content: "";
+    position: absolute;
+    top: 56px;
+    bottom: 0;
+    left: 0;
+    width: 57px;
+    background-color: #87B3BD;
+    z-index: 1;
+}
