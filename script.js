@@ -39,3 +39,23 @@ function atualizar_card_tras() {
     titulo.innerText = itensCarrossel[indiceAtual].titulo
     texto.innerText = itensCarrossel[indiceAtual].texto
 }
+
+/* PRÓXIMA FALA TIMINO */
+
+const proximaFalaTimino = document.querySelector("#timino-fala-botao")
+const falaDoTimino = document.querySelector("#fala-do-timino")
+
+let proximaFala = false; 
+proximaFalaTimino.addEventListener("click", mostrarProximaFala)
+
+function mostrarProximaFala(){
+    if (proximaFala === false) {
+        falaDoTimino.innerText = "Aqui começa sua jornada de aprendizado. Te vejo por aí!"
+        proximaFalaTimino.innerText = "Fala Anter."
+        proximaFala = true
+    }else {
+        falaDoTimino.innerText = "Fala viajante! Eu sou o Timino, seu guia nessa aventura biotecnológica."
+        proximaFalaTimino.innerText = "Próx. Fala"
+        proximaFala = false
+    }
+}
