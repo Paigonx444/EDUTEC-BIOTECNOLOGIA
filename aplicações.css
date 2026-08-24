@@ -56,65 +56,105 @@ main {
 }
 
 .container-timeline {
-    margin-top: 187px;
-    margin-left: 33px;
+    margin-top: 187px; 
+    margin-left: 33px; 
     display: flex;
     flex-direction: column;
-    gap: 120px;
+    position: relative;
+}
+
+.linha-vertical-timeline {
+    position: absolute;
+    top: 28px;
+    bottom: 28px;
+    left: 26.5px;
+    width: 4px;
+    background-color: #011C36;
+    z-index: 1;
 }
 
 .item-timeline {
     display: flex;
-    gap: 30px;
+    position: relative;
+    z-index: 2;
 }
 
 .marcador-timeline {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    width: 57px;
+    margin-right: 25px;
+    flex-shrink: 0;
 }
 
 .bolinha {
-    width: 35px;
-    height: 35px;
+    width: 57px;
+    height: 56px;
     border-radius: 50%;
-    border: 4px solid #011C36;
-    background-color: #E60000;
+    border: 3px solid #011C36;
+    flex-shrink: 0;
     z-index: 2;
 }
 
-.linha-conectora {
-    width: 4px;
-    background-color: #011C36;
-    flex-grow: 1;
-    margin-top: -5px;
-}
-
 .conteudo-timeline {
-    max-width: 898px;
+    width: 1068px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .aba-titulo {
     background-color: #011C36;
-    color: #A7D1DA;
+    color: #FFFFFF;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
-    font-size: 20px; 
-    padding: 10px 24px;
+    font-size: 35px;
+    padding: 10px 30px;
     border-radius: 20px 20px 20px 0;
     display: inline-block;
+    margin-bottom: 0;
+    z-index: 2;
 }
 
 .caixa-texto {
     background-color: #011C36;
-    border-radius: 0 8px 8px 8px;
-    padding: 34px 34px 24px 34px;
-    margin-top: -2px;
+    border-radius: 0 20px 20px 20px;
+    padding: 24px 32px;
+    width: 100%;
+    margin-top: -1px;
 }
 
 .caixa-texto p {
-    color: #A7D1DA;
+    color: #94CBD8;
     font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: justify;
+    line-height: normal;
+    margin: 0;
+}
+
+#exemplos {
+    width: 100%;
+    margin-top: 243px;
+}
+
+.caixa-exemplos {
+    width: 1448px;
+    height: 180px;
+    background-color: rgba(25, 84, 126, 0.60);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-exemplos h2 {
+    color: #011C36;
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -1.2px;
+    line-height: normal;
+    margin: 0;
 }
