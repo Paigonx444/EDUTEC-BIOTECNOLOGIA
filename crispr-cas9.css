@@ -21,8 +21,9 @@
 
 .link-selecionado {
     background-color: var(--link-selecionado);
-    width: 12.5rem;
-    height: 6.6rem;
+    width: fit-content;
+    height: fit-content;
+    padding: 2.5rem;
     border-radius: 1.4rem;
     margin-top: 1rem;
 }
