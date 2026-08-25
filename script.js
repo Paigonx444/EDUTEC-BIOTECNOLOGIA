@@ -50,7 +50,7 @@ proximaFalaTimino.addEventListener("click", mostrarProximaFala)
 
 function mostrarProximaFala(){
     if (proximaFala === false) {
-        falaDoTimino.innerText = "Aqui começa sua jornada de aprendizado. Te vejo por aí!"
+        falaDoTimino.innerText = "Aqui começa sua jornada de aprendizado, de uma olhada na trilha logo abaixo. Te vejo por aí!"
         proximaFalaTimino.innerText = "Fala Anter."
         proximaFala = true
     }else {
