@@ -29,6 +29,7 @@ body::-webkit-scrollbar {
             font-size: 10rem;
             font-style: normal;
             font-weight: 700;
+            font-family: Inter;
             line-height: normal;
             margin-right: 10rem;
             margin-bottom: 50rem;
