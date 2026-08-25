@@ -7,7 +7,7 @@
 
 :root {
     --bg-blue: #6696A1;
-    --texto-nav: #9FFFFF;
+    --Azul-700: #9FFFFF;
     --background-nav: rgba(7, 7, 7, 0.50);
     --Preto: #000000;
     --meio-preto: rgba(0, 0, 0, 0.5);
@@ -38,17 +38,7 @@ section {
     /*cada section terá a altura de uma tela pq ai fica responsivo*/
     width: 100vw;
     /*largura de 80% da tela pra nao ficar tao no canto as coisas*/
-
-}
-
-.nav {
-    .link-selecionado {
-        background-color: var(--link-selecionado);
-        width: 10rem;
-        height: 6.6rem;
-        border-radius: 1.4rem;
-        margin-top: 1rem;
-    }
+    display: flex;
 }
 
 #home-bg-img {
@@ -110,12 +100,15 @@ section {
         margin-top: 5rem;
         margin-bottom: 15rem;
         text-align: center;
+        justify-content: center;
+        display: flex;
     }
 
     .conteudo-carrossel-encontrara {
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: center;
         gap: 15rem;
     }
 
@@ -130,9 +123,9 @@ section {
         height: 35rem;
         padding: 5rem;
         border-radius: 2.8rem;
-        color: var(--texto-nav);
+        color: var(--Azul-700);
         font-size: 3rem;
-        border: 0.1rem solid var(--texto-nav);
+        border: 0.1rem solid var(--Azul-700);
     }
 
     #seta-esquerda {
@@ -179,13 +172,17 @@ section {
     }
 }
 
+#degrades-e-encontrara {
+    flex-direction: column;
+}
+
 #degrade-home-1 {
     background-color: var(--Azul-100);
     width: 100vw;
     height: 4rem;
     animation: surgir linear both;
     animation-timeline: view();
-    animation-range: 10% cover 20%;
+    animation-range: 0% cover 20%;
 }
 
 #degrade-home-2 {
@@ -194,7 +191,7 @@ section {
     height: 4rem;
     animation: surgir linear both;
     animation-timeline: view();
-    animation-range: 10% cover 20%;
+    animation-range: 0% cover 20%;
 }
 
 #degrade-home-3 {
@@ -203,7 +200,7 @@ section {
     height: 4rem;
     animation: surgir linear both;
     animation-timeline: view();
-    animation-range: 10% cover 20%;
+    animation-range: 0% cover 20%;
 }
 
 #degrade-home-4 {
@@ -212,7 +209,7 @@ section {
     height: 4rem;
     animation: surgir linear both;
     animation-timeline: view();
-    animation-range: 10% cover 20%;
+    animation-range: 0% cover 20%;
 }
 
 #degrade-home-5 {
@@ -221,7 +218,7 @@ section {
     height: 4rem;
     animation: surgir linear both;
     animation-timeline: view();
-    animation-range: 10% cover 20%;
+    animation-range: 0% cover 20%;
 }
 
 #degrade-home-6 {
@@ -230,7 +227,57 @@ section {
     height: 4rem;
     animation: surgir linear both;
     animation-timeline: view();
-    animation-range: 10% cover 20%;
+    animation-range: 0% cover 20%;
+}
+
+@keyframes surgirDNA{
+    from {
+        opacity: 0;
+        transform: translateX(-20vw);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes surgirTimino {
+    from {
+        opacity: 0;
+        transform: translateX(20vw)
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.dna-timino-fala {
+    display: flex;
+    flex-direction: row;
+}
+#DNA-ilustracao {
+    display: flex;
+    margin-left: 7.5vw;
+    margin-top: 2.5vh;
+    z-index: 10;
+    animation: surgirDNA linear;
+    animation-timeline: view();
+    animation-range: 0% cover 45%;
+}
+#trilha-de-aprendizagem {
+    flex-direction: column;
+    gap: 3rem;
+}
+#timino-e-sua-fala {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin-left: auto;
+    padding-right: 22.5vw;
+    margin-top: 10rem;
+    animation: surgirTimino linear;
+    animation-timeline: view();
+    animation-range: 0% cover 45%;
 }
 
 .timino-fala {
@@ -238,20 +285,18 @@ section {
     background-color: var(--Azul-esverdeado-100);
     width: 50rem;
     height: 27.5rem;
-    display: flex;
-    margin-left: 90rem;
-    margin-top: 15rem;
-    border: 0.1rem solid var(--texto-nav);
-    color: var(--texto-nav);
+    border: 0.1rem solid var(--Azul-700);
+    color: var(--Azul-700);
     font-size: 4rem;
     font-weight: 500;
-    padding: 5rem;
+    padding: 4.5rem;
     flex-direction: column;
 }
 
 #timino {
-    margin-left: 132.5rem;
-    margin-top: -2.5rem;
+    width: 100%;
+    display: flex;
+    transform: translate(40rem, -2.5rem);
 }
 
 .timino-fala>div {
@@ -266,11 +311,12 @@ section {
     #timino-fala-botao {
         background-color: var(--Azul-600);
         color: var(--Azul-esverdeado-100);
+        justify-content: flex-end;
         border: none;
         border-radius: 10rem;
         width: 10rem;
         height: 2rem;
-        margin-left: 17.5rem;
+        margin-left: 17rem;
         margin-top: 1.85rem;
         font-family: Inter;
         font-size: 1.5rem;
@@ -279,12 +325,14 @@ section {
 
     #timino-fala-botao:hover {
         cursor: pointer;
-        outline: 0.2rem solid var(--texto-nav);
+        outline: 0.2rem solid var(--Azul-700);
         transition: 0.25s;
     }
 }
 
 #trilha-de-aprendizado-carrossel {
+    background-color: var(--Azul-200);
+    height: 70vh;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -295,7 +343,6 @@ section {
     scroll-snap-type: x mandatory;
     /* Força o carrossel a travar no card ao rolar */
     scroll-behavior: smooth;
-    margin-top: -30rem;
 }
 
 /* esconde a barra de rolagem visual */
@@ -304,55 +351,129 @@ section {
 }
 
 .cards-trilha {
+    margin-top: 2.5vh;
     flex-direction: column;
-    position: relative;
     flex: 0 0 40vw;
-    /* Define que o a imagem vai ocupar 30% da tela */
-    height: 50rem;
-    background-color: var(--Azul-esverdeado-100);
-    border-radius: 3rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow:hidden;
-
+    gap: 1.5rem;
     scroll-snap-align: center;
     /* Alinha o card exatamente no centro da tela */
-    padding: 5rem;
-    width: 10rem;
-    h4 {
-        font-size: 3rem;
-        margin-bottom: 44rem;
-        color: var(--texto-nav);
-        position: absolute;
 
+    h4 {
+        color: var(--Azul-700);
+        background-color: var(--Azul-esverdeado-100);
+        width: fit-content;
+        font-size: 3rem;
+        padding: 2rem;
+        padding-bottom: 8.5rem;
+        border-radius: 3rem;
+        margin-bottom: -8.5rem;
+    }
+
+    a {
+        position: relative;
+        display: block;
+        width: 100%;
+        border-radius: 5rem;
+        height: 40rem;
+        overflow: hidden;
+        border: 1rem solid var(--Azul-esverdeado-100);
+        background-color: var(--Azul-esverdeado-100);
+    }
+
+    img {
+        border-radius: 3rem;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    a::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, var(--Preto), var(--transparente));
+        pointer-events: none;
+        transition: opacity 0.4s ease-in-out;
+    }
+
+    a:hover::after {
+        opacity: 0;
     }
 }
-
-.cards-trilha a img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 3rem;
-}
-#imagem-aplicacoes {
-    width: 100%;
-    height: 70%;
-    margin-top: 10rem;
-}
-
-.cards-trilha::after{
-    content: "";
+#seta-carrossel {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top, var(--Preto), var(--transparente));
-    pointer-events: none;
-    transition: opacity 0.4s ease-in-out;
+    margin-top: 165vh;
+    margin-left: 47.5vw;
+    display: flex;
+    width: 5vw;
+    background-color: var(--Azul-200);
 }
+footer {
+    z-index: 0;
 
-.cards-trilha:hover::after{
-    opacity: 0;
+    #div-footer {
+        background-color: var(--Azul-esverdeado-100);
+        height: 40rem;
+        min-width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        flex-direction: column;
+
+        #img-footer {
+            min-width: 10.3rem;
+            height: 10.3rem;
+            border-radius: 2rem;
+        }
+
+        #p1-footer {
+            color: var(--Azul-600);
+            font-family: Inter;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 0.9px;
+        }
+
+        #linha-footer {
+            background-color: var(--Azul-500);
+            height: 0.2rem;
+            width: 23rem;
+        }
+
+        #p2-footer {
+            color: var(--Azul-600);
+            font-family: Inter;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: -1.2px;
+
+            strong {
+                color: var(--Azul-700);
+                font-family: Inter;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: normal;
+                letter-spacing: -1.2px;
+            }
+        }
+
+        #p3-footer {
+            color: var(--Azul-500);
+            font-family: Inter;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: -0.6px;
+        }
+    }
 }
