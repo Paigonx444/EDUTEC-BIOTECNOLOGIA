@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+    font-size: 62.5%;
+    --azul-fundo: #87B3BD;
+    --azul-escuro: #011C36;
+    --azul-card: #052D46;
+    --azul-destaque: #457A98;
+    --texto-claro: #94CBD8;
+}
+
+html {
+    background-color: var(--azul-fundo);
+}
+
+body {
+    min-width: 100%;
+    background-color: var(--azul-fundo);
+    color: var(--azul-escuro);
+    font-family: Inter, Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.hero-aplicacoes {
+    position: relative;
+    width: 100%;
+    height: 107.1rem;
+    overflow: hidden;
+
+    #aplicacoes-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+        filter: grayscale(30%) saturate(75%) brightness(100%);
+    }
+
+    .filtro-hero {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top,rgba(1, 28, 54, 1), rgba(0, 130, 252, 0));
+    }
+}
+
+.faixas-transicao {
+    width: 100%;
+    div { width: 100%; height: 4.3rem; }
+    div:nth-child(1) { height: 5.4rem; background-color: #011C36; }
+    div:nth-child(2) { background-color: #052D46; }
+    div:nth-child(3) { height: 4.2rem; background-color: #19547E; }
+    div:nth-child(4) { height: 4.1rem; background-color: #3981BC; }
+    div:nth-child(5) { height: 3.5rem; background-color: #4F8EB5; }
+    div:nth-child(6) { background-color: #72A6C0; }
+}
+
+.classificacoes {
+    min-height: 233.6rem;
+    background-color: var(--azul-fundo);
+    padding-top: 12.5rem;
+}
+
+.titulo-classificacoes {
+    width: 56.3rem;
+    min-height: 18.1rem;
+    padding: 4.4rem 6.4rem;
+    color: var(--texto-claro);
+    background-color: var(--azul-escuro);
+    border-radius: 0 1.5rem 1.5rem 0;
+
+    h1 { font-size: 3.9rem; line-height: 1.05; font-weight: 700; }
+    span { color: #4E9BC3; }
+}
+
+.linha-do-tempo {
+    position: relative;
+    width: calc(100% - 16rem);
+    max-width: 124.8rem;
+    margin: 14.8rem 0 0 17vw;
+    padding-left: 8.3rem;
+
+}
+
+.linha-vertical-tempo {
+    position: absolute;
+    top: 2.8rem;
+    bottom: 10.2rem;
+    left: 5rem;
+    width: 0.7rem;
+    background-color: var(--azul-escuro);
+}
+
+.classificacao {
+    position: relative;
+    min-height: 28.3rem;
+
+    .marcador {
+        position: absolute;
+        top: 0;
+        left: -5.8rem;
+        width: 5.5rem;
+        height: 5.5rem;
+        border: 0.5rem solid var(--azul-escuro);
+        border-radius: 50%;
+        z-index: 2;
+    }
+
+    h2 {
+        display: inline-flex;
+        align-items: center;
+        min-height: 5.5rem;
+        margin-left: 2.5rem;
+        padding: 0.6rem 2.1rem 0.4rem;
+        color: var(--texto-claro);
+        background-color: var(--azul-escuro);
+        border-radius: 1.5rem 1.5rem 0 0;
+        font-size: 3.4rem;
+        line-height: 1;
+        font-weight: 600;
+    }
+
+    p {
+        min-height: 15.3rem;
+        margin-left: 2.5rem;
+        padding: 3.1rem 3.6rem;
+        color: var(--texto-claro);
+        background-color: var(--azul-card);
+        border-radius: 0 1rem 1rem 1rem;
+        font-size: 2rem;
+        line-height: 1.16;
+        font-weight: 700;
+        text-align: justify;
+    }
+}
+
+.saude .marcador { background-color: #F52027; }
+.agropecuaria .marcador { background-color: #079222; }
+.industrial .marcador { background-color: #FFFFFF; }
+.marinha .marcador { background-color: #210EA4; }
+.nutricao .marcador { background-color: #E7DE00; }
+.ambiental .marcador { background-color: #9D9D9D; }
+
+.exemplos {
+    height: 18rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--azul-destaque);
+
+    h2 { font-size: 4rem; font-weight: 800; color: var(--azul-escuro); }
+}
+
+.cards-exemplos {
+    min-height: 121.5rem;
+    padding: 21rem 4.2rem 18rem;
+    background-color: var(--azul-fundo);
+    display: flex;
+    flex-direction: column;
+    #seta-carrossel {
+        display: flex;
+        flex-direction: column;
+        width: 12.5vh;
+        margin-left: 44vw;
+        margin-bottom: 10vh;
+    }
+}
+
+.cards-container {
+    width: 100%;
+    max-width: 72.5vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 3.5rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.card-exemplo {
+    flex: 1;
+    min-height: 78.8rem;
+    padding: 3.6rem 3.4rem 4rem;
+    color: var(--texto-claro);
+    background-color: var(--azul-card);
+    border-radius: 1.4rem;
+    flex: 0 0 22.5vw;
+    scroll-snap-align: center;
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 2rem;
+    }
+
+    p {
+        margin-top: 3rem;
+        font-size: 2rem;
+        line-height: 1.12;
+        font-weight: 700;
+        text-align: left;
+    }
+}
+.cards-container::-webkit-scrollbar{
+    display: none;
+}
+
+footer {
+    z-index: 0;
+
+    #div-footer {
+        background-color: var(--azul-destaque);
+        height: 40rem;
+        min-width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        flex-direction: column;
+
+        #img-footer {
+            min-width: 10.3rem;
+            height: 10.3rem;
+            border-radius: 2rem;
+        }
+
+        #p1-footer {
+            color: var(--azul-escuro);
+            font-family: Inter;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 0.9px;
+        }
+
+        #linha-footer {
+            background-color: var(--azul-escuro);
+            height: 0.2rem;
+            width: 23rem;
+        }
+
+        #p2-footer {
+            color: var(--azul-escuro);
+            font-family: Inter;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: -1.2px;
+
+            strong {
+                color: white;
+                font-family: Inter;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: normal;
+                letter-spacing: -1.2px;
+            }
+        }
+
+        #p3-footer {
+            color: var(--azul-escuro);
+            font-family: Inter;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: -0.6px;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .nav {
+        .nav-textos { overflow-x: auto; justify-content: flex-start; }
+        .nav-textos > a { padding-inline: 1.4rem; }
+    }
+
+    .hero-aplicacoes { height: 75vh; min-height: 52rem; background-position: center; }
+    .classificacoes { min-height: auto; padding-bottom: 12rem; }
+    .titulo-classificacoes { width: 90%; max-width: 56.3rem; }
+    .linha-do-tempo { width: calc(100% - 4rem); margin-left: 2rem; padding-left: 7rem; }
+
+    .classificacao {
+        min-height: auto;
+        margin-bottom: 8rem;
+
+        h2 { font-size: 2.5rem; }
+        p { margin-left: 0; font-size: 1.7rem; text-align: left; }
+    }
+
+    .cards-exemplos { padding: 10rem 2rem; }
+    .cards-container { max-width: 48rem; flex-direction: column; }
+    .card-exemplo { min-height: auto; }
+}
