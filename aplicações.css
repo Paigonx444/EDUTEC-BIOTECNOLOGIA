@@ -206,7 +206,6 @@ body {
     align-items: center;
     justify-content: center;
     background-color: var(--azul-destaque);
-
     h2 { font-size: 4rem; font-weight: 800; color: var(--azul-escuro); }
 }
 
@@ -215,7 +214,7 @@ body {
     padding: 21rem 4.2rem 18rem;
     background-color: var(--azul-fundo);
     display: flex;
-    flex-direction: column;
+    flex-direction: column;  
     #seta-carrossel {
         display: flex;
         flex-direction: column;

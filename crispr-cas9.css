@@ -88,7 +88,7 @@ body::-webkit-scrollbar {
     background-color: #8bbdc9;
     min-height: 100%;
     width: 100%;
-    border-radius: 5rem 5rem 5rem 5rem;
+    border-radius: 3rem;
     z-index: 1;
     margin-bottom: 10rem;
     margin-top: 25rem;

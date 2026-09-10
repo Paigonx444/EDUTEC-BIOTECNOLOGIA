@@ -73,7 +73,7 @@ body::-webkit-scrollbar {
     margin-top: -3rem;
     height: 310vh;
     width: 100vw;
-    background-color: #94c3ce;
+    background-color: #B0D7D7;
     padding: 10rem;
     padding-top: 30rem;
     box-sizing: border-box;
@@ -85,10 +85,10 @@ body::-webkit-scrollbar {
 }
 
 #bg-secondary {
-    background-color: #94c3ce;
+    background-color: #a5ceced7;
     min-height: 100%;
     width: 100%;
-    border-radius: 10rem;
+    border-radius: 3rem;
     z-index: 1;
     margin-bottom: 10rem;
     margin-top: 35rem;
@@ -96,17 +96,181 @@ body::-webkit-scrollbar {
 
 main {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows:repeat(auto auto auto auto);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows:repeat(auto auto auto);
     grid-template-areas: 
-    "topo topo"
-    "balao1 balao1"
-    "balao2 balao2"
-    "balao3 .";
+    "topo"
+    "carrossel"
+    "mitos";
 }
 
+#a-mutacao{
+    grid-area: topo;
+    height: 40rem;
+    #balao-mutacao{
+        width: 105.5rem;
+        height: 18rem;
+        background-color: #0A2E40;
+        margin-top: 10rem;
+        border-radius: 0 1.5rem 1.5rem 0;   
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1{
+        width: 19.6rem;
+        height: 10.0rem;
+        color: #C3D0DB;
+        font-family: Inter;
+        font-size: 4rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -1.2px;
+        
+
+        strong{
+            color: #0D9CBD;
+            font-family: Inter;
+            font-size: 4rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: -1.2px;
+        }
+    }
+
+    #linha-vertical{
+        width: 0.3rem;
+        height: 6.1rem;
+        background-color: #FFF;
+        color: #DAEEFF;
+        margin-inline: 4.5rem;
+    }
+
+    p{
+        width: 726px;
+        height: 126px;
+        color: #C3D0DB;
+        text-align: justify;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+}
+
+.cards-exemplos {
+    height: 75rem;
+    padding: 21rem 4.2rem 18rem;
+    display: flex;
+    flex-direction: column;
+    grid-area: carrossel;
+    margin-top: -72rem;
+    #seta-carrossel {
+        display: flex;
+        flex-direction: column;
+        width: 12.5vh;
+        align-self: center;
+        margin-bottom: 2rem;
+        margin-top: -21rem;
+    }
+}
+
+.cards-container {
+    width: 100%;
+    max-width: 64vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 3.5rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    
+}
+
+.card-exemplo {
+    flex: 1;
+    min-height: 48.8rem;
+    padding: 3.6rem 3.4rem 4rem;
+    color: var(--texto-claro);
+    background-color: #71A9B5;
+    border-radius: 4.5rem;
+    flex: 0 0 38.4rem;
+    scroll-snap-align: center;
+
+    h1{
+        width: 31.8rem;
+        height: 4.9rem;
+        color: #001203;
+        font-family: Inter;
+        font-size: 2.1rem;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        
+    }
+
+    h2 {
+        margin-top: 2rem;
+        width: 29.6rem;
+        height: 8.7rem;
+        color: #001203;
+        font-family: Inter;
+        font-size: 3.4rem;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+    }
+
+    #contex{
+        margin-top: 4rem;
+        width: 29.6rem;
+        height: 8.7rem;
+        color: #001203;
+        font-family: Inter;
+        font-size: 3.4rem;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        margin-bottom: -2rem;
+    }
 
 
+    p {
+        width: 31.8rem;
+        height: 20.9rem;
+        color: #001203;
+        text-align: justify;
+        font-family: Inter;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-top: 4rem;
+    }
+}
+.cards-container::-webkit-scrollbar{
+    display: none;
+}
+
+#verdadeiro{
+    grid-area: mitos;
+    #vs-conteiner{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows:repeat(auto auto auto auto);
+        grid-template-areas: 
+        "topo1 topo1"
+        "mito1 vdd1"
+        "mito2 vdd2"
+        "mito3 vdd3";
+    }
+}
 footer {
     margin-top: auto;
     #div-footer {
