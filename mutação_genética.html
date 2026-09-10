@@ -1,26 +1,140 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mutação Genética</title>
-    <link rel="stylesheet" href="nav.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CRISPR-Cas9</title>
+  <link rel="stylesheet" href="nav.css" />
+  <link rel="stylesheet" href="mutação_genética.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet" />
+  <link rel="icon" href="Assets/Logo BIOTEC PIETS.png" type="image/x-icon">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <div class="nav-textos">
-                <a href="index.html">Home</a> <div class="linha-vertical"></div>
-                <a href="crispr-cas9.html">CRISPR-Cas9</a>
-                <a href="aplicações.html">Aplicações</a>
-                <a href="futuro.html">Futuro</a>
-                <a href="mutação_genética.html">Mutação Genética</a>
-                <a href="jogo.html">Jogo</a> <div class="linha-vertical"></div>
-                <a>Login</a>
-                <a href="cadastro.html" id="botao-cadastro">Cadastre-se</a>
+  <header class="nav">
+    <div class="nav-textos">
+      <a href="index.html"><img src="Assets/Logo BIOTEC PIETS.png" alt="Logo da empresa BIOTEC - PIETS" /></a>
+      <a href="index.html" id="home-nav">Home</a>
+      <div class="linha-vertical"></div>
+      <a href="crispr-cas9.html">CRISPR-Cas9</a>
+      <a href="aplicações.html">Aplicações</a>
+      <a href="futuro.html">Futuro</a>
+      <a href="mutação_genética.html" class="link-selecionado">Mutação Genética</a>
+      <a href="jogo.html">Jogo</a>
+      <div class="linha-vertical"></div>
+      <a>Login</a>
+      <a href="cadastro.html" id="botao-cadastro">Cadastre-se</a>
+    </div>
+  </header>
+
+  <section id="crispBG">
+    <div id="bg-container">
+      <img src="./Assets/mutacaobg.png" alt="" />
+    </div>
+    <div id="titulo">
+      <p>MUTAÇÃO GENÉTICA</p>
+    </div>
+    <div id="titulo1">
+      <p>MUTAÇÃO GENÉTICA</p>
+    </div>
+    <div id="titulo2">
+      <p>MUTAÇÃO GENÉTICA</p>
+    </div>
+  </section>
+
+  <div id="bg-primary">
+    <main id="bg-secondary">
+       
+        <section id="a-mutacao">
+            <div id="balao-mutacao">
+                <h1>A Mutação <strong>Genética</strong></h1>
+                
+                <div id="linha-vertical"></div>
+
+                <p>As mutações genéticas são alterações no DNA de um organismo. Elas podem surgir naturalmente durante a replicação celular ou serem causadas por fatores externos, como radiação, substâncias químicas e vírus. Algumas mutações não causam efeitos, enquanto outras podem gerar características novas, doenças ou vantagens evolutivas.</p>
             </div>
-        </nav>
-    </header>
-    
+        </section>
+        
+        <section class="cards-exemplos">
+            <div id="seta-carrossel">
+                <img src="Assets/Seta Azul para carrossel.png" alt="Seta para a direita indicando o fluxo do Carrossel">
+            </div>
+            <div class="cards-container">
+                <div class="card-exemplo">
+                    <h1>O que é uma mutação genética?</h1>
+
+                    <h2>O conceito <br> básico</h2>
+
+                    <p>Uma mutação genética é uma alteração na sequência do DNA. Essas mudanças podem ocorrer naturalmente ou serem causadas por fatores externos, modificando a forma como as células funcionam.</p>
+                </div>
+
+                <div class="card-exemplo">
+                    <h1>Como elas <br>acontecem?</h1>
+                    
+                    <h2 id="contex">Contextualização</h2>
+                    
+                    <p>As mutações podem surgir durante a divisão celular por erros na replicação do DNA ou pela exposição a radiação, produtos químicos, vírus e outros agentes mutagênicos.</p>
+                </div>
+
+                <div class="card-exemplo">
+                    <h1>Efeitos das mutações</h1>
+                    
+                    <h2>Benignos ou <br>malignos?</h2>
+
+                    <p>Nem toda mutação é prejudicial. Algumas não causam efeito algum, outras podem provocar doenças genéticas e algumas oferecem vantagens que ajudam na adaptação e sobrevivência dos organismos.</p>
+                </div>
+
+                <div class="card-exemplo">
+                    <h1>Importância para a evolução</h1>
+                    
+                    <h2 id="contex">Impactos futuros</h2>
+
+                    <p>As mutações são responsáveis pela variabilidade genética das espécies. Sem elas, não haveria diversidade biológica nem evolução, pois são a fonte de novas características ao longo das gerações.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="verdadeiro">
+            <div id="vs-grid">           
+                    <div id="vs">
+                    <h1>MITOS</h1>
+                    <img src="./Assets/VS (Mitos vs Verdades).png" alt="Versus sinal">
+                    <h2>VERDADES</h2>
+                    </div>
+
+                    <div id="mt1"><p>Toda mutação genética é maligna e causa doenças e deformidades irreversíveis</p></div>
+                    <div id="vd1"><p> A maioria das mutações não causa doenças. Muitas são neutras e algumas podem até trazer características vantajosas para o organismo.</p></div>
+                    <div id="mt2"><p>Toda mutação genética é maligna e causa doenças e deformidades irreversíveis</p></div>
+                    <div id="vd2"><p> A maioria das mutações não causa doenças. Muitas são neutras e algumas podem até trazer características vantajosas para o organismo.</p></div>
+                    <div id="mt3"><p>Toda mutação genética é maligna e causa doenças e deformidades irreversíveis</p></div>
+                    <div id="vd3"><p> A maioria das mutações não causa doenças. Muitas são neutras e algumas podem até trazer características vantajosas para o organismo.</p></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+      <div id="div-footer">
+        <img id="img-footer" src="./Assets/Logo BIOTEC PIETS.png" alt="" />
+
+        <p id="p1-footer">Biotec.net</p>
+
+        <div id="linha-footer"></div>
+
+        <p id="p2-footer">DESENVOLVIDO POR <strong>PIETS</strong></p>
+
+        <p id="p3-footer">All Copyrights reserved - 2026</p>
+      </div>
+    </footer>
+  </div>
 </body>
+
 </html>
