@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body::-webkit-scrollbar {
@@ -34,6 +35,51 @@ body {
     width: 100%;
     height: 107.1rem;
     overflow: hidden;
+    #titulo {
+        
+            color: #daf5ed;
+            font-size: 5rem;
+            font-style: normal;
+            font-weight: 700;
+            font-family: Inter;
+            line-height: normal;
+            margin-right: 15rem;
+            margin-bottom: 55rem;
+            position: absolute;
+            top: 50rem;
+            left: 145rem;
+            z-index: 21;
+        }
+        #titulo1 {
+           
+            color: #166eb6;
+            font-size: 5rem;
+            font-style: normal;
+            font-weight: 700;
+            font-family: Inter;
+            line-height: normal;
+            margin-right: 14.8rem;
+            margin-bottom: 54.2rem;
+            position: absolute;
+            top: 50.3rem;
+            left: 145.3rem;
+            z-index: 20;
+        }
+        #titulo2 {
+            
+            color: #07477c;
+            font-size: 5rem;
+            font-style: normal;
+            font-weight: 700;
+            font-family: Inter;
+            line-height: normal;
+            margin-right: 14.6rem;
+            margin-bottom: 53.6rem;
+            position: absolute;
+            top: 50.6rem;
+            left: 145.6rem;
+            z-index: 19;
+        }
 
     #aplicacoes-bg {
         position: absolute;
@@ -44,6 +90,7 @@ body {
         object-fit: cover;
         object-position: center top;
         filter: grayscale(30%) saturate(75%) brightness(100%);
+        
     }
 
     .filtro-hero {
