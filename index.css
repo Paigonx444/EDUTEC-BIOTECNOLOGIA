@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-size: 62.5%;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 
 :root {
     --bg-blue: #6696A1;
@@ -405,7 +408,7 @@ section {
 }
 #seta-carrossel {
     position: absolute;
-    margin-top: 165vh;
+    margin-top: 170vh;
     margin-left: 47.5vw;
     display: flex;
     width: 5vw;

@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 :root {
     font-size: 62.5%;
     --azul-fundo: #87B3BD;

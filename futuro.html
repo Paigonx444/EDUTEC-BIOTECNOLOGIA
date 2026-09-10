@@ -1,26 +1,167 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Futuro</title>
     <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="futuro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet" />
+    <script src="script.js" defer></script>
+    <title>Futuro - Piets</title>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <div class="nav-textos">
-                <a href="index.html">Home</a> <div class="linha-vertical"></div>
-                <a href="crispr-cas9.html">CRISPR-Cas9</a>
-                <a href="aplicações.html">Aplicações</a>               
-                <a href="futuro.html">Futuro</a>                
-                <a href="mutação_genética.html">Mutação Genética</a>
-                <a href="jogo.html">Jogo</a> <div class="linha-vertical"></div>
-                <a>Login</a>
-                <a href="cadastro.html" id="botao-cadastro">Cadastre-se</a>
-            </div>
-        </nav>
+    <header class="nav">
+        <div class="nav-textos">
+            <a href="index.html"><img src="Assets/Logo BIOTEC PIETS.png" alt="Logo da empresa BIOTEC - PIETS"></a>
+            <a href="index.html" id="home-nav">Home</a>
+            <div class="linha-vertical"></div>
+            <a href="crispr-cas9.html">CRISPR-Cas9</a>
+            <a href="aplicações.html">Aplicações</a>
+            <a href="futuro.html" class="link-selecionado">Futuro</a>
+            <a href="mutação_genética.html">Mutação Genética</a>
+            <a href="jogo.html">Jogo</a>
+            <div class="linha-vertical"></div>
+            <a>Login</a>
+            <a href="cadastro.html" id="botao-cadastro">Cadastre-se</a>
+        </div>
     </header>
-    
+
+    <section id="bg-e-degrades">
+        <img src="Assets/Futuro BG.png" alt="Imagem Fictícia de uma Planta sendo sustentada pela Tecnologia"
+            id="background-futuro">
+        <div id="degrade-para-os-degrades"></div>
+        <div id="degrades">
+            <div id="degrade-1"></div>
+            <div id="degrade-2"></div>
+            <div id="degrade-3"></div>
+            <div id="degrade-4"></div>
+            <div id="degrade-5"></div>
+            <div id="degrade-6"></div>
+        </div>
+    </section>
+    <main>
+        <section id="titulo-e-carrossel">
+            <div id="futuro-biológico">
+                <h2>
+                    O futuro é <br> <strong>Biológico</strong>.
+                </h2>
+            </div>
+            <div id="container-carrossel">
+                <div id="carrossel">
+                    <div class="card">
+                        <h4>Fim do envelhecimento</h4>
+                        <h3>Longevidade avançada.</h3>
+                        <p>A ciência vai parar de focar apenas em remediar doenças para agir na reversão celular,
+                            estendendo
+                            a juventude e a expectativa de vida com saúde total.</p>
+                    </div>
+                    <div class="card">
+                        <h4>O DNA como HD</h4>
+                        <h3>Armazenamento de dados.</h3>
+                        <p>Esqueça os servidores convencionais. O futuro do armazenamento de dados é biológico, onde um
+                            único grama de DNA pode guardar petabytes de informação por milênios.</p>
+                    </div>
+                    <div class="card">
+                        <h4>Bioimpressão 3D</h4>
+                        <h3>Órgãos sob demanda.</h3>
+                        <p>A bioimpressão 3D vai zerar as filas de transplante. Tecidos e órgãos inteiros serão
+                            cultivados a
+                            partir das suas próprias células, eliminando qualquer risco de rejeição.</p>
+                    </div>
+                    <div class="card">
+                        <h4>Materiais vivos</h4>
+                        <h3>Engenharia de materiais.</h3>
+                        <p>A engenharia do futuro usará organismos programados no nível molecular para criar materiais
+                            sustentáveis e despoluir o meio ambiente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="iceberg-section">
+            <div>
+                <h2 id="Mergulhe">Mergulhe na <strong> Biotecnologia.</strong></h2>
+            </div>
+            <div id="iceberg">
+                <div>
+                    <img id="iceberg-imagem" src="Assets/ICEBERG.png"
+                        alt="Imagem de um ICEBERG demonstrando as profundidades da Biotecnologia">
+                </div>
+                <div>
+                    <div id="primeira-divisao" class="divisao-iceberg"></div>
+                </div>
+
+                <div id="conteudos">
+                    <div class="conteudo-iceberg">
+                        <div class="blocos-texto-iceberg">Vacinas e medicamentos</div>
+                        <div class="blocos-texto-iceberg">Alimentos geneticamente modificados</div>
+                        <div class="blocos-texto-iceberg">Testes de DNA</div>
+                        <div class="blocos-texto-iceberg">Tratamentos médicos modernos</div>
+                    </div>
+
+                    <div>
+                        <div id="segunda-divisao" class="divisao-iceberg"></div>
+                    </div>
+                    <div id="segunda-divisao" class="conteudo-iceberg">
+                        <div class="blocos-texto-iceberg">Estudo das células</div>
+                        <div class="blocos-texto-iceberg">Manipulação do DNA</div>
+                        <div class="blocos-texto-iceberg">Engenharia Genética</div>
+                        <div class="blocos-texto-iceberg">Cultivos de tecidos e organismos</div>
+                    </div>
+
+                    <div>
+                        <div id="terceira-divisao"class="divisao-iceberg"></div>
+                    </div>
+                    <div class="conteudo-iceberg">
+                        <div class="blocos-texto-iceberg">Edição genética avançada</div>
+                        <div class="blocos-texto-iceberg">Órgãos Produzidos em laboratório</div>
+                        <div class="blocos-texto-iceberg">Materiais feitos com organismos vivos</div>
+                        <div class="blocos-texto-iceberg">Integração entre IA e Biologia</div>
+                    </div>
+
+                    <div>
+                        <div id="quarta-divisao" class="divisao-iceberg"></div>
+                    </div>
+                    <div class="conteudo-iceberg">
+                        <div class="blocos-texto-iceberg">Limites da modificação genética</div>
+                        <div class="blocos-texto-iceberg">Segurança das novas tecnologias</div>
+                        <div class="blocos-texto-iceberg">Impactos ambientais</div>
+                        <div class="blocos-texto-iceberg">Questões éticas sobre alterar a vida</div>
+                    </div>
+                </div>
+
+                <div id="camadas">
+                    <h3>SUPERFÍCIE</h3>
+                    <h3>ÁGUAS RASAS</h3>
+                    <h3>ÁGUAS PROFUNDAS</h3>
+                    <h3>FUNDO DO MAR</h3>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div id="div-footer">
+                <img id="img-footer" src="./Assets/Logo BIOTEC PIETS.png" alt="">
+
+                <p id="p1-footer">Biotec.net</p>
+
+                <div id="linha-footer"></div>
+
+                <p id="p2-footer">DESENVOLVIDO POR <strong>PIETS</strong></p>
+
+                <p id="p3-footer">All Copyrights reserved - 2026</p>
+            </div>
+        </footer>
+    </main>
+
 </body>
+
 </html>
