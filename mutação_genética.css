@@ -25,13 +25,7 @@ body{
     
 }
 
-.link-selecionado {
-    background-color: var(--link-selecionado);
-    width: 12.5rem;
-    height: 6.6rem;
-    border-radius: 1.4rem;
-    margin-top: 1rem;
-}
+
 
 #crispBG {
     height: 130vh;
@@ -115,6 +109,20 @@ body{
 }
 
 @media (max-width: 1700px){
+
+    .link-selecionado1 {
+    background-color: var(--link-selecionado);
+    width: 12.5rem;
+    height: 6.6rem;
+    border-radius: 1.4rem;
+    margin-top: 1rem;
+    
+}
+
+
+    .fodase{
+        display: none !important;
+    }
 
 body ::-webkit-scrollbar{
     display: none;
