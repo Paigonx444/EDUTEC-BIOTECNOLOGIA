@@ -1,26 +1,134 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogo</title>
     <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="jogo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet" />
+    <script src="script.js" defer></script>
+    <title>BioTermo - Piets</title>
+    <link rel="icon" href="Assets/Logo BIOTEC PIETS.png" type="image/x-icon">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <div class="nav-textos">
-                <a href="index.html">Home</a> <div class="linha-vertical"></div>
-                <a href="crispr-cas9.html">CRISPR-Cas9</a>
-                <a href="aplicações.html">Aplicações</a>
-                <a href="futuro.html">Futuro</a>
-                <a href="mutação_genética.html">Mutação Genética</a>
-                <a href="jogo.html">Jogo</a> <div class="linha-vertical"></div>
-                <a>Login</a>
-                <a href="cadastro.html" id="botao-cadastro">Cadastre-se</a>
-            </div>
-        </nav>
+    <header class="nav">
+        <div class="nav-textos">
+            <a href="index.html"><img src="Assets/Logo BIOTEC PIETS.png" alt="Logo da empresa BIOTEC - PIETS"></a>
+            <a href="index.html" id="home-nav" class="link-selecionado">Home</a>
+            <div class="linha-vertical"></div>
+            <a href="crispr-cas9.html">CRISPR-Cas9</a>
+            <a href="aplicações.html">Aplicações</a>
+            <a href="futuro.html">Futuro</a>
+            <a href="mutação_genética.html">Mutação Genética</a>
+            <a href="jogo.html">Jogo</a>
+            <div class="linha-vertical"></div>
+            <a>Login</a>
+            <a href="cadastro.html" id="botao-cadastro">Cadastre-se</a>
+        </div>
     </header>
-    
+    <section class="termo">
+        <div class="container-termo">
+            <div id="termo-texto">
+                <h1>BioTermo</h1>
+                <p>Um jogo divertido que testa seus conhecimentos biotecnológicos, fazendo-o lembrar de termos
+                    esquecidos.</p>
+            </div>
+
+            <div id="Fileira-Inputs">
+                <input type="text" class="input-termo" id="FRC1">
+                <input type="text" class="input-termo" id="FRC2">
+                <input type="text" class="input-termo" id="FRC3">
+                <input type="text" class="input-termo" id="FRC4">
+                <input type="text" class="input-termo" id="FRC5">
+                <input type="text" class="input-termo" id="FRC6">
+            </div>
+
+            <div class="container-termo" id="container-letras">
+                <div id="Fileira-1">
+                    <div class="textos-container"> <p id="F1C1"></p> </div>
+                    <div class="textos-container"> <p id="F1C2"></p> </div>
+                    <div class="textos-container"> <p id="F1C3"></p> </div>
+                    <div class="textos-container"> <p id="F1C4"></p> </div>
+                    <div class="textos-container"> <p id="F1C5"></p> </div>
+                    <div class="textos-container"> <p id="F1C6"></p> </div>
+                </div>
+                <div id="Fileira-2">
+                    <div class="textos-container"> <p id="F2C1"></p> </div>
+                    <div class="textos-container"> <p id="F2C2"></p> </div>
+                    <div class="textos-container"> <p id="F2C3"></p> </div>
+                    <div class="textos-container"> <p id="F2C4"></p> </div>
+                    <div class="textos-container"> <p id="F2C5"></p> </div>
+                    <div class="textos-container"> <p id="F2C6"></p> </div>
+                </div>
+                <div id="Fileira-3">
+                    <div class="textos-container"> <p id="F1C1"></p> </div>
+                    <div class="textos-container"> <p id="F3C2"></p> </div>
+                    <div class="textos-container"> <p id="F3C3"></p> </div>
+                    <div class="textos-container"> <p id="F3C4"></p> </div>
+                    <div class="textos-container"> <p id="F3C5"></p> </div>
+                    <div class="textos-container"> <p id="F3C6"></p> </div>
+                </div>
+                <div id="Fileira-4">
+                    <div class="textos-container"> <p id="F4C1"></p> </div>
+                    <div class="textos-container"> <p id="F4C2"></p> </div>
+                    <div class="textos-container"> <p id="F4C3"></p> </div>
+                    <div class="textos-container"> <p id="F4C4"></p> </div>
+                    <div class="textos-container"> <p id="F4C5"></p> </div>
+                    <div class="textos-container"> <p id="F4C6"></p> </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="keyboard">
+        <div id="keyboard">
+            <div id="Fileira-1-keyboard">
+                <button id="Button-Q">Q</button>
+                <button id="Button-W">W</button>
+                <button id="Button-E">E</button>
+                <button id="Button-R">R</button>
+                <button id="Button-T">T</button>
+                <button id="Button-Y">Y</button>
+                <button id="Button-U">U</button>
+                <button id="Button-I">I</button>
+                <button id="Button-O">O</button>
+                <button id="Button-P">P</button>
+            </div>
+            <div id="Fileira-2-keyboard">
+                <button id="Button-A">A</button>
+                <button id="Button-S">S</button>
+                <button id="Button-D">D</button>
+                <button id="Button-F">F</button>
+                <button id="Button-G">G</button>
+                <button id="Button-H">H</button>
+                <button id="Button-J">J</button>
+                <button id="Button-K">K</button>
+                <button id="Button-L">L</button>
+
+                <button id="Delete"> <img src="/Assets/backspace IMG Jogo.png" alt="Deletar última letra"></button>
+            </div>
+            <div id="Fileira-3-keyboard">
+                <button id="Button-Z">Z</button>
+                <button id="Button-X">X</button>
+                <button id="Button-C">C</button>
+                <button id="Button-V">V</button>
+                <button id="Button-B">B</button>
+                <button id="Button-N">N</button>
+                <button id="Button-M">M</button>
+                
+                <button id="Enter">Enter</button>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>

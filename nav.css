@@ -63,4 +63,12 @@
         align-items: center;
         justify-content: center;
     }
+    .link-selecionado {
+    background-color: var(--link-selecionado);
+    width: fit-content;
+    height: fit-content;
+    padding: 2.5rem;
+    border-radius: 1.4rem;
+    margin-top: 1rem;
+}
 }

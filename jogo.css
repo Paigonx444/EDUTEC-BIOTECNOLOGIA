@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+:root {
+    --azul-background: #1a305f;
+    --termo-background: #000311;
+    --quadros-termo-bg: #040820;
+    --quadros-dentro-termo-bg: #00061d;
+    --branco: #FFF;
+    --Azul-700: #9FFFFF;
+    --Azul-600: #183d75;
+    --termo-background-2: #040820;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    min-width: 100vw;
+    /*largura é a largura da tela*/
+    background-color: var(--azul-background);
+    font-family: Inter;
+}
+
+section {
+    min-height: 100vh;
+    /*cada section terá a altura de uma tela pq ai fica responsivo*/
+    width: 100vw;
+    /*largura de 80% da tela pra nao ficar tao no canto as coisas*/
+    display: flex;
+}
+
+#termo-texto {
+    font-size: 2rem;
+    color: var(--Azul-700);
+    text-align: center;
+    margin: 5rem;
+    width: 100%;
+    max-width: 35rem;
+
+    h1 {
+        font-size: 3rem;
+        margin: 1rem;
+    }
+}
+
+.termo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Fileira-Inputs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+
+    .input-termo {
+        max-width: 10rem;
+        max-height: 10rem;
+        width: 4vw;
+        height: 4vw;
+        border-radius: 1rem;
+        outline: 0.25rem solid var(--azul-background);
+        border: none;
+        background-color: var(--quadros-termo-bg);
+    }
+}
+
+.container-termo {
+    display: flex;
+    border-radius: 7.5rem;
+    max-width: 80vw;
+    padding: 2.5vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--termo-background);
+    height: fit-content;
+    margin: 7.5rem;
+
+    .textos-container {
+        display: flex;
+        background-color: var(--quadros-dentro-termo-bg);
+        border-radius: 1rem;
+        border: solid 0.25rem var(--azul-background);
+        margin: 0.25rem;
+        width: 5vw;
+        height: 5vw;
+
+    }
+}
+
+#container-letras {
+    background-color: var(--termo-background-2);
+    display: flex;
+    flex-direction: column;
+    padding: 7.5%;
+    margin-top: 0;
+    #Fileira-1, #Fileira-2,
+     #Fileira-3, #Fileira-4 {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+
+
+
+
+
+
