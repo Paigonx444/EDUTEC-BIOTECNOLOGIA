@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+:root {
+    --azul-background: #4682B4;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+    min-width: 100vw;
+    /*largura é a largura da tela*/
+    background-color: var(--azul-background);
+    font-family: Inter;
+}
+
+section {
+    min-height: 100vh;
+    /*cada section terá a altura de uma tela pq ai fica responsivo*/
+    width: 100vw;
+    /*largura de 80% da tela pra nao ficar tao no canto as coisas*/
+    display: flex;
+}
+
