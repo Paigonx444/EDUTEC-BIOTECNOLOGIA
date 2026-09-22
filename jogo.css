@@ -15,24 +15,30 @@
     --Azul-700: #9FFFFF;
     --Azul-600: #183d75;
     --termo-background-2: #040820;
+
+    /* Cores do Feedback */
+    --cor-correto: #2e7d32;
+    --cor-presente: #c59b27;
+    --cor-incorreto: #2a354f;
 }
 
-body::-webkit-scrollbar {
-    display: none;
+html {
+    overflow-y: auto;
 }
 
 body {
     min-width: 100vw;
-    /*largura é a largura da tela*/
+    min-height: 110vh;
+    padding-bottom: 24rem; /* Garante que o conteúdo não fique escondido sob o teclado */
     background-color: var(--azul-background);
-    font-family: Inter;
+    font-family: Inter, sans-serif;
+}
+body::-webkit-scrollbar {
+    display: none;
 }
 
 section {
-    min-height: 80vh;
-    /*cada section terá a altura de uma tela pq ai fica responsivo*/
     width: 100vw;
-    /*largura de 80% da tela pra nao ficar tao no canto as coisas*/
     display: flex;
 }
 
@@ -40,49 +46,82 @@ section {
     font-size: 2rem;
     color: var(--Azul-700);
     text-align: center;
-    margin: 5rem;
+    margin: 2rem;
     width: 100%;
     max-width: 35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    h1 {
-        font-size: 3rem;
-        margin: 1rem;
-    }
+#termo-texto h1 {
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+#btn-reset {
+    margin-top: 1.5rem;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Inter, sans-serif;
+    color: var(--termo-background);
+    background-color: var(--Azul-700);
+    border: none;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+#btn-reset:hover {
+    background-color: #ffffff;
+    transform: scale(1.05);
+}
+
+#btn-reset:active {
+    transform: scale(0.95);
 }
 
 .termo {
+    margin-top: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 2rem;
 }
 
 #Fileira-Inputs {
     display: flex;
     gap: 1rem;
     margin-bottom: 2.5rem;
-
-    .input-termo {
-        max-width: 10rem;
-        max-height: 10rem;
-        width: 4vw;
-        height: 4vw;
-        border-radius: 1rem;
-        outline: 0.25rem solid var(--azul-background);
-        border: none;
-        background-color: var(--quadros-termo-bg);
-    }
-    .input-termo:hover {
-        background-color: var(--Azul-600);
-    }
-    .input-termo:focus {
-        outline: 0.25rem solid var(--Azul-700);
-    }
 }
 
+.input-termo {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 1rem;
+    outline: 0.25rem solid var(--azul-background);
+    border: none;
+    background-color: var(--quadros-termo-bg);
+    color: var(--branco);
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.input-termo:hover {
+    background-color: var(--Azul-600);
+}
+
+.input-termo:focus {
+    outline: 0.25rem solid var(--Azul-700);
+}
 
 .container-termo {
     display: flex;
-    border-radius: 7.5rem;
+    border-radius: 5rem;
     max-width: 80vw;
     padding: 2.5vh;
     flex-direction: column;
@@ -90,103 +129,154 @@ section {
     align-items: center;
     background-color: var(--termo-background);
     height: fit-content;
-    margin: 7.5rem;
+    margin: 2rem;
+}
 
-    .textos-container {
-        display: flex;
-        background-color: var(--quadros-dentro-termo-bg);
-        border-radius: 1rem;
-        border: solid 0.25rem var(--azul-background);
-        margin: 0.25rem;
-        width: 5vw;
-        height: 5vw;
-    }
+.textos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--termo-background);
+    border-radius: 1rem;
+    border: solid 0.25rem var(--azul-background);
+    margin: 0.25rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    transition: background-color 0.4s ease, border-color 0.4s ease;
+}
+
+.textos-container p {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--branco);
+    text-transform: uppercase;
 }
 
 #container-letras {
     background-color: var(--termo-background-2);
     display: flex;
     flex-direction: column;
-    padding: 7.5%;
+    padding: 3rem;
     margin-top: 0;
-
-    #Fileira-1,
-    #Fileira-2,
-    #Fileira-3,
-    #Fileira-4 {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-    }
 }
 
+#Fileira-1,
+#Fileira-2,
+#Fileira-3,
+#Fileira-4 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
 
+/* CLASSES DE FEEDBACK (VERDE, AMARELO, CINZA) */
+.textos-container.correto,
+.keys.correto {
+    background-color: var(--cor-correto) !important;
+    border-color: #4caf50 !important;
+    color: #ffffff !important;
+}
 
+.textos-container.presente,
+.keys.presente {
+    background-color: var(--cor-presente) !important;
+    border-color: #ffd54f !important;
+    color: #ffffff !important;
+}
 
+.textos-container.incorreto,
+.keys.incorreto {
+    background-color: var(--cor-incorreto) !important;
+    border-color: #1a233a !important;
+    color: #888888 !important;
+}
+
+/* --- ESTRUTURA E ALINHAMENTO DO TECLADO VIRTUAL --- */
 .keyboard {
     display: flex;
+    justify-content: center;
     position: fixed;
     z-index: 9999;
-    left: 49%;
     bottom: 0;
+    left: 50%;
     transform: translateX(-50%);
-
     transition: transform 0.4s ease, opacity 0.3s ease;
+    width: 100%;
+    max-width: 65rem;
+}
 
-    min-height: auto;
-    width: fit-content;
+#keyboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--keyboard-background);
+    border: 0.4rem solid var(--termo-background);
+    border-bottom: none;
+    border-radius: 2.5rem 2.5rem 0 0;
+    padding: 1.5rem 1rem;
+    box-shadow: 0 -0.5rem 2rem rgba(0, 0, 0, 0.4);
+}
 
-    #keyboard {
-        border: 0.5rem solid var(--termo-background);
-        background-color: var(--keyboard-background);
-        border-radius: 5rem 5rem 0 0;
-        padding: 2.5%;
-        height: fit-content;
-        align-items: center;
-        justify-content: center;
+#Fileira-1-keyboard,
+#Fileira-2-keyboard,
+#Fileira-3-keyboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    width: 100%;
+    margin: 0.4rem 0;
+}
 
-        #Fileira-1-keyboard,
-        #Fileira-2-keyboard,
-        #Fileira-3-keyboard {
-            align-items: center;
-            justify-content: center;
-            display: flex;
-            gap: 1rem;
-            margin: 1rem;
-        }
+/* Padronização de todas as teclas (Letras, Delete e Enter) */
+.keys,
+#Delete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4.5rem;
+    min-width: 3.6rem;
+    padding: 0 0.8rem;
+    font-size: 1.8rem;
+    font-family: 'Gabarito', sans-serif;
+    font-weight: bold;
+    background-color: var(--termo-background);
+    color: var(--Azul-700);
+    border-radius: 0.6rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    user-select: none;
+}
 
-        #Enter {
-            width: 10vw;
-        }
+.keys:hover,
+#Delete:hover {
+    outline: 0.15rem solid var(--Azul-700);
+    transform: translateY(-0.2rem);
+}
 
-        #Delete {
-            width: 3vw;
-            outline: none;
-            border: none;
-        }
+.keys:active,
+#Delete:active {
+    transform: translateY(0);
+}
 
-        .keys {
-            font-size: 3rem;
-            font-family: Gabarito;
-            background-color: var(--termo-background);
-            color: var(--Azul-700);
-            width: 3vw;
-            height: 3vw;
-            border-radius: 0.5rem;
-            border: none;
-            outline: none;
-        }
+/* Ajustes específicos de largura para botões especiais */
+#Enter {
+    min-width: 6.5rem;
+    font-size: 1.5rem;
+}
 
-        .keys:hover {
-            outline: 0.1rem solid var(--Azul-700);
-            transition: 0.4s ease;
-        }
-    }
+#Delete {
+    min-width: 4.8rem;
+}
 
-    #Backspace-img {
-        width: 2.5vw;
-        height: 2.5vw;
-        background-color: black;
-    }
+#Backspace-img {
+    width: 2.2rem;
+    height: 2.2rem;
+    object-fit: contain;
+    pointer-events: none;
 }
 
 .keyboard.escondido {
