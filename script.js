@@ -59,3 +59,28 @@ function mostrarProximaFala(){
         proximaFala = false
     }
 }
+
+/*===========================================================================================*/
+/*===========================================================================================*/
+/*===========================================================================================*/
+/*===========================================================================================*/
+/*===========================================================================================*/
+/*===========================================================================================*/
+
+/* KEYBOARD */
+
+let ultimoScroll = window.scrollY
+const teclado = document.getElementById('.keyboard')
+
+window.addEventListener('scroll', () => {
+    const scrollAtual = window.scrollY
+
+    if(scrollAtual > ultimoScroll && scrollAtual > 100) {
+        teclado.classList.add('.escondido')
+    }
+    else if (scrollAtual < ultimoScroll) {
+        teclado.classList.remove('.escondido')
+    }
+    
+    ultimoScroll = scrollAtual
+})
