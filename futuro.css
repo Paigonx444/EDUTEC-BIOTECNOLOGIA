@@ -76,8 +76,48 @@ section {
 #bg-e-degrades {
     display: grid;
     grid-template-columns: 1fr;
-
     flex-direction: column;
+    #titu{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+     #titulo {
+            color: #fbfeff;
+            font-size: 8rem;
+            font-style: normal;
+            font-weight: 700;
+            font-family: Inter;
+            line-height: normal;
+            margin-left: 15rem;
+            margin-bottom: 55rem;
+            position: absolute;
+            z-index: 21;
+        }
+        #titulo1 {
+            color: #05b42b;
+            font-size: 8rem;
+            font-style: normal;
+            font-weight: 700;
+            font-family: Inter;
+            line-height: normal;
+            margin-left: 14.8rem;
+            margin-bottom: 54.2rem;
+            position: absolute;
+            z-index: 20;
+        }
+        #titulo2 {
+            color: #025514;
+            font-size: 8rem;
+            font-style: normal;
+            font-weight: 700;
+            font-family: Inter;
+            line-height: normal;
+            margin-left: 14.6rem;
+            margin-bottom: 53.6rem;
+            position: absolute;
+            z-index: 19;
+        }
+        }
 }
 
 #background-futuro {
