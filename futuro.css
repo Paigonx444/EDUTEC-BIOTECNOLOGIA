@@ -59,6 +59,15 @@ section {
     position: absolute;
 }
 
+.link-selecionado1 {
+    background-color: var(--link-selecionado);
+    width: fit-content;
+    height: 6rem;
+    padding: 2.5rem;
+    border-radius: 1.4rem;
+    margin-top: 1.25rem;
+}
+
 @keyframes surgir {
     from {
         opacity: 0;
@@ -76,8 +85,48 @@ section {
 #bg-e-degrades {
     display: grid;
     grid-template-columns: 1fr;
-
     flex-direction: column;
+    #titu{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+     #titulo {
+            color: #fbfeff;
+            font-size: 8rem;
+            font-style: normal;
+            font-weight: 700;
+            font-family: Inter;
+            line-height: normal;
+            margin-left: 15rem;
+            margin-bottom: 55rem;
+            position: absolute;
+            z-index: 21;
+        }
+        #titulo1 {
+            color: #05b42b;
+            font-size: 8rem;
+            font-style: normal;
+            font-weight: 700;
+            font-family: Inter;
+            line-height: normal;
+            margin-left: 14.8rem;
+            margin-bottom: 54.2rem;
+            position: absolute;
+            z-index: 20;
+        }
+        #titulo2 {
+            color: #025514;
+            font-size: 8rem;
+            font-style: normal;
+            font-weight: 700;
+            font-family: Inter;
+            line-height: normal;
+            margin-left: 14.6rem;
+            margin-bottom: 53.6rem;
+            position: absolute;
+            z-index: 19;
+        }
+        }
 }
 
 #background-futuro {
@@ -434,4 +483,127 @@ footer {
             letter-spacing: -0.6px;
         }
     }
+}
+
+@media (max-width: 1700px) {
+    #bg-e-degrades {
+    
+    #titu{
+       
+     #titulo {
+            color: #fbfeff;
+            font-size: 8rem;
+            font-style: normal;
+            font-weight: 700;
+            font-family: Inter;
+            line-height: normal;
+            margin-left: 5rem;
+            margin-bottom: 55rem;
+            position: absolute;
+            z-index: 21;
+        }
+        #titulo1 {
+            color: #05b42b;
+            font-size: 8rem;
+            font-style: normal;
+            font-weight: 700;
+            font-family: Inter;
+            line-height: normal;
+            margin-left: 4.8rem;
+            margin-bottom: 54.2rem;
+            position: absolute;
+            z-index: 20;
+        }
+        #titulo2 {
+            color: #025514;
+            font-size: 8rem;
+            font-style: normal;
+            font-weight: 700;
+            font-family: Inter;
+            line-height: normal;
+            margin-left: 4.6rem;
+            margin-bottom: 53.6rem;
+            position: absolute;
+            z-index: 19;
+        }
+        }
+}
+
+.link-selecionado1 {
+    background-color: var(--link-selecionado);
+    width: 12.5rem;
+    height: 6.6rem;
+    border-radius: 1.4rem;
+    margin-top: 1rem;
+    
+}
+
+.fodase{
+        display: none !important;
+    }
+
+#iceberg-imagem {
+    grid-column: 1;
+    position: absolute;
+    height: 130vh;
+    left: 5.5rem;
+    margin-top: 1rem;
+    animation: iceberg 1s linear both;
+    animation-timeline: view();
+    animation-range: 5% cover 30%;
+}
+.blocos-texto-iceberg {
+            background-color: var(--background-cards-claros);
+            margin: 1rem;
+            padding: 2rem;
+            font-size: 1.6rem;
+            text-align: center;
+            border-radius: 1rem;
+            font-weight: 600;
+            position: relative;
+            left: 10rem;
+        }
+
+        #camadas{
+            #spf{
+                position: relative;
+                bottom: 2rem;
+            }
+            #agr{
+                    position: relative;
+                    bottom: 1rem;
+                    width: 20rem;
+            }
+            #agp{
+                position: relative;
+                    bottom: 3rem;
+            }
+            #fnd{
+                    position: relative;
+                    bottom: 4.5rem;
+            }
+        }
+
+        #primeira-divisao {
+    bottom: 102.5rem;
+    left: 35rem;
+    width: 101.8rem;
+}
+
+#segunda-divisao {
+    width: 125.75rem;
+    bottom: 80.5rem;
+    left: 11rem;
+}
+
+#terceira-divisao {
+    width: 119.9rem;
+    left: 16.8rem;
+}
+
+#quarta-divisao {
+    width: 110.8rem;
+    left: 26rem;
+}
+
 }
