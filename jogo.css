@@ -29,7 +29,7 @@ body {
 }
 
 section {
-    min-height: 100vh;
+    min-height: 80vh;
     /*cada section terá a altura de uma tela pq ai fica responsivo*/
     width: 100vw;
     /*largura de 80% da tela pra nao ficar tao no canto as coisas*/
@@ -71,7 +71,14 @@ section {
         border: none;
         background-color: var(--quadros-termo-bg);
     }
+    .input-termo:hover {
+        background-color: var(--Azul-600);
+    }
+    .input-termo:focus {
+        outline: 0.25rem solid var(--Azul-700);
+    }
 }
+
 
 .container-termo {
     display: flex;
@@ -93,7 +100,6 @@ section {
         margin: 0.25rem;
         width: 5vw;
         height: 5vw;
-
     }
 }
 
@@ -116,7 +122,6 @@ section {
 
 
 
-
 .keyboard {
     display: flex;
     position: fixed;
@@ -131,10 +136,11 @@ section {
     width: fit-content;
 
     #keyboard {
+        border: 0.5rem solid var(--termo-background);
         background-color: var(--keyboard-background);
         border-radius: 5rem 5rem 0 0;
         padding: 2.5%;
-        height: 5%;
+        height: fit-content;
         align-items: center;
         justify-content: center;
 
@@ -148,6 +154,16 @@ section {
             margin: 1rem;
         }
 
+        #Enter {
+            width: 10vw;
+        }
+
+        #Delete {
+            width: 3vw;
+            outline: none;
+            border: none;
+        }
+
         .keys {
             font-size: 3rem;
             font-family: Gabarito;
@@ -159,6 +175,11 @@ section {
             border: none;
             outline: none;
         }
+
+        .keys:hover {
+            outline: 0.1rem solid var(--Azul-700);
+            transition: 0.4s ease;
+        }
     }
 
     #Backspace-img {
@@ -169,7 +190,7 @@ section {
 }
 
 .keyboard.escondido {
-    transform: translateY(-50%, 100%);
+    transform: translate(-50%, 100%);
     opacity: 0;
     pointer-events: none;
 }
