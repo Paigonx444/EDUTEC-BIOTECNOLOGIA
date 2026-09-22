@@ -45,17 +45,19 @@ function atualizar_card_tras() {
 const proximaFalaTimino = document.querySelector("#timino-fala-botao")
 const falaDoTimino = document.querySelector("#fala-do-timino")
 
-let proximaFala = false; 
+let proximaFala = false;
 proximaFalaTimino.addEventListener("click", mostrarProximaFala)
 
-function mostrarProximaFala(){
+function mostrarProximaFala() {
     if (proximaFala === false) {
         falaDoTimino.innerText = "Aqui começa sua jornada de aprendizado, de uma olhada na trilha logo abaixo. Te vejo por aí!"
         proximaFalaTimino.innerText = "Fala Anter."
         proximaFala = true
-    }else {
+    } else {
         falaDoTimino.innerText = "Fala viajante! Eu sou o Timino, seu guia nessa aventura biotecnológica."
         proximaFalaTimino.innerText = "Próx. Fala"
         proximaFala = false
     }
 }
+
+/*===========================================================================================*/

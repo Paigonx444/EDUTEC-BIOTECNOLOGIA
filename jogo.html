@@ -9,12 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet" />
-    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="jogo.js" defer></script>
     <title>BioTermo - Piets</title>
     <link rel="icon" href="Assets/Logo BIOTEC PIETS.png" type="image/x-icon">
 </head>
@@ -35,103 +31,56 @@
             <a href="cadastro.html" id="botao-cadastro">Cadastre-se</a>
         </div>
     </header>
+
     <section class="termo">
-        <div id="container-termo">
-            <div class="termo-texto">
+        <div class="container-termo">
+            <div id="termo-texto">
                 <h1>BioTermo</h1>
-                <p>Um jogo divertido que testa seus conhecimentos biotecnológicos, fazendo-o lembrar de termos
-                    esquecidos.</p>
+                <p>Um jogo divertido que testa seus conhecimentos biotecnológicos.</p>
+                <button id="btn-reset" type="button">Nova Palavra </button>
             </div>
 
             <div id="Fileira-Inputs">
-                <input type="text" id="FRC1">
-                <input type="text" id="FRC2">
-                <input type="text" id="FRC3">
-                <input type="text" id="FRC4">
-                <input type="text" id="FRC5">
-                <input type="text" id="FRC6">
+                <input type="text" class="input-termo" id="FRC1" maxlength="1" autocomplete="off">
+                <input type="text" class="input-termo" id="FRC2" maxlength="1" autocomplete="off">
+                <input type="text" class="input-termo" id="FRC3" maxlength="1" autocomplete="off">
+                <input type="text" class="input-termo" id="FRC4" maxlength="1" autocomplete="off">
+                <input type="text" class="input-termo" id="FRC5" maxlength="1" autocomplete="off">
+                <input type="text" class="input-termo" id="FRC6" maxlength="1" autocomplete="off">
             </div>
 
-            <div class="container-termo" id="letras">
+            <div class="container-termo" id="container-letras">
                 <div id="Fileira-1">
-                    <div id="F1C1">
-
-                    </div>
-                    <div id="F1C2">
-
-                    </div>
-                    <div id="F1C3">
-
-                    </div>
-                    <div id="F1C4">
-
-                    </div>
-                    <div id="F1C5">
-
-                    </div>
-                    <div id="F1C6">
-
-                    </div>
+                    <div class="textos-container"><p id="F1C1"></p></div>
+                    <div class="textos-container"><p id="F1C2"></p></div>
+                    <div class="textos-container"><p id="F1C3"></p></div>
+                    <div class="textos-container"><p id="F1C4"></p></div>
+                    <div class="textos-container"><p id="F1C5"></p></div>
+                    <div class="textos-container"><p id="F1C6"></p></div>
                 </div>
                 <div id="Fileira-2">
-                    <div id="F2C1">
-
-                    </div>
-                    <div id="F2C2">
-
-                    </div>
-                    <div id="F2C3">
-
-                    </div>
-                    <div id="F2C4">
-
-                    </div>
-                    <div id="F2C5">
-
-                    </div>
-                    <div id="F2C6">
-
-                    </div>
+                    <div class="textos-container"><p id="F2C1"></p></div>
+                    <div class="textos-container"><p id="F2C2"></p></div>
+                    <div class="textos-container"><p id="F2C3"></p></div>
+                    <div class="textos-container"><p id="F2C4"></p></div>
+                    <div class="textos-container"><p id="F2C5"></p></div>
+                    <div class="textos-container"><p id="F2C6"></p></div>
                 </div>
                 <div id="Fileira-3">
-                    <div id="F1C1">
-
-                    </div>
-                    <div id="F3C2">
-
-                    </div>
-                    <div id="F3C3">
-
-                    </div>
-                    <div id="F3C4">
-
-                    </div>
-                    <div id="F3C5">
-
-                    </div>
-                    <div id="F3C6">
-
-                    </div>
+                    <div class="textos-container"><p id="F3C1"></p></div>
+                    <div class="textos-container"><p id="F3C2"></p></div>
+                    <div class="textos-container"><p id="F3C3"></p></div>
+                    <div class="textos-container"><p id="F3C4"></p></div>
+                    <div class="textos-container"><p id="F3C5"></p></div>
+                    <div class="textos-container"><p id="F3C6"></p></div>
                 </div>
                 <div id="Fileira-4">
-                    <div id="F4C1">
-
-                    </div>
-                    <div id="F4C2">
-
-                    </div>
-                    <div id="F4C3">
-
-                    </div>
-                    <div id="F4C4">
-
-                    </div>
-                    <div id="F4C5">
-
-                    </div>
-                    <div id="F4C6">
-
-                    </div>  
+                    <div class="textos-container"><p id="F4C1"></p></div>
+                    <div class="textos-container"><p id="F4C2"></p></div>
+                    <div class="textos-container"><p id="F4C3"></p></div>
+                    <div class="textos-container"><p id="F4C4"></p></div>
+                    <div class="textos-container"><p id="F4C5"></p></div>
+                    <div class="textos-container"><p id="F4C6"></p></div>
                 </div>
             </div>
         </div>
@@ -140,40 +89,38 @@
     <section class="keyboard">
         <div id="keyboard">
             <div id="Fileira-1-keyboard">
-                <button id="Button-Q">Q</button>
-                <button id="Button-W">W</button>
-                <button id="Button-E">E</button>
-                <button id="Button-R">R</button>
-                <button id="Button-T">T</button>
-                <button id="Button-Y">Y</button>
-                <button id="Button-U">U</button>
-                <button id="Button-I">I</button>
-                <button id="Button-O">O</button>
-                <button id="Button-P">P</button>
+                <button class="keys" id="Button-Q">Q</button>
+                <button class="keys" id="Button-W">W</button>
+                <button class="keys" id="Button-E">E</button>
+                <button class="keys" id="Button-R">R</button>
+                <button class="keys" id="Button-T">T</button>
+                <button class="keys" id="Button-Y">Y</button>
+                <button class="keys" id="Button-U">U</button>
+                <button class="keys" id="Button-I">I</button>
+                <button class="keys" id="Button-O">O</button>
+                <button class="keys" id="Button-P">P</button>
             </div>
             <div id="Fileira-2-keyboard">
-                <button id="Button-A">A</button>
-                <button id="Button-S">S</button>
-                <button id="Button-D">D</button>
-                <button id="Button-F">F</button>
-                <button id="Button-G">G</button>
-                <button id="Button-H">H</button>
-                <button id="Button-J">J</button>
-                <button id="Button-K">K</button>
-                <button id="Button-L">L</button>
-
-                <button id="Delete"> <img src="/Assets/backspace IMG Jogo.png" alt="Deletar última letra"></button>
+                <button class="keys" id="Button-A">A</button>
+                <button class="keys" id="Button-S">S</button>
+                <button class="keys" id="Button-D">D</button>
+                <button class="keys" id="Button-F">F</button>
+                <button class="keys" id="Button-G">G</button>
+                <button class="keys" id="Button-H">H</button>
+                <button class="keys" id="Button-J">J</button>
+                <button class="keys" id="Button-K">K</button>
+                <button class="keys" id="Button-L">L</button>
+                <button id="Delete"><img src="Assets/Backspace IMG jogo.jpeg" alt="Deletar última letra" id="Backspace-img"></button>
             </div>
             <div id="Fileira-3-keyboard">
-                <button id="Button-Z">Z</button>
-                <button id="Button-X">X</button>
-                <button id="Button-C">C</button>
-                <button id="Button-V">V</button>
-                <button id="Button-B">B</button>
-                <button id="Button-N">N</button>
-                <button id="Button-M">M</button>
-                
-                <button id="Enter">Enter</button>
+                <button class="keys" id="Button-Z">Z</button>
+                <button class="keys" id="Button-X">X</button>
+                <button class="keys" id="Button-C">C</button>
+                <button class="keys" id="Button-V">V</button>
+                <button class="keys" id="Button-B">B</button>
+                <button class="keys" id="Button-N">N</button>
+                <button class="keys" id="Button-M">M</button>
+                <button class="keys" id="Enter">Enter</button>
             </div>
         </div>
     </section>
